@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login_ui.LoginController">
+   <children>
+      <ImageView>
+         <image>
+            <Image url="@../image/login_bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="20.0" layoutX="771.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="20.0" layoutX="743.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/min.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="134.0" layoutX="605.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo_v2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="229.0" layoutX="560.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/title.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="560.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账号" />
+      <TextField layoutX="596.0" layoutY="284.0" prefHeight="30.0" prefWidth="190.0" />
+      <Text layoutX="560.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" />
+      <TextField layoutX="596.0" layoutY="324.0" prefHeight="30.0" prefWidth="190.0" />
+      <CheckBox layoutX="596.0" layoutY="366.0" mnemonicParsing="false" text="记住密码">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="704.0" layoutY="366.0" mnemonicParsing="false" text="自动登录">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <ImageView fitHeight="33.0" fitWidth="229.0" layoutX="590.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/button.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="676.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="登录" />
+   </children>
+</AnchorPane>
