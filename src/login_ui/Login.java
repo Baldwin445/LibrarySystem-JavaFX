@@ -1,17 +1,24 @@
 package login_ui;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.stage.StageStyle;
+import javafx.scene.image.Image;
+import javafx.scene.control.Button;
+import sample.Controller;
+
 
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+
 
 public class Login extends Application {
     double x1;
@@ -22,8 +29,12 @@ public class Login extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("login_layout.fxml"));
-        Scene scene = new Scene(root, 800, 540);
+        Scene scene = new Scene(root, 815, 540);
         primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image("/image/logo_v2.png"));
+
+//        LoginController controller = new LoginController();
+//        controller.onCloseEvent(primaryStage);
 
         //stage窗体移动
         screenMove(primaryStage, scene);
@@ -32,6 +43,14 @@ public class Login extends Application {
         primaryStage.initStyle(StageStyle.UNDECORATED);
 
         primaryStage.show();
+
+        //Test Image onClick
+        //ImageView close = (ImageView) root.lookup("#close");
+
+
+
+
+
 
     }
 
@@ -57,4 +76,6 @@ public class Login extends Application {
             }
         });
     }
+
+
 }
