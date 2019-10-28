@@ -1,0 +1,207 @@
+package login;
+
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.PasswordField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseDragEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+import javafx.scene.control.TextField;
+
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class LoginController implements Initializable {
+//    private Stage stage;                            //保存调用的Stage
+//    private AnchorPane root;
+    LoginData usr;
+
+    @FXML
+    private ImageView close;
+    @FXML
+    private ImageView min;
+    @FXML
+    private ImageView login;
+    @FXML
+    private PasswordField pwd;
+    @FXML
+    private TextField acct;
+    @FXML
+    private Text loginText;
+
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+//        stage = getStage();
+        onButtonEvent();
+        pwd.setPrefColumnCount(30);
+        acct.setPrefColumnCount(30);
+
+    }
+
+    //获取调用的Stage
+//    private Stage getStage() {
+//        if (stage == null) {
+//            stage = (Stage) root.getScene().getWindow();
+//        }
+//        return stage;
+//    }
+
+
+    //按钮监听实现
+    private void onButtonEvent(){
+        onCloseEvent();
+        onMinEvent();
+        onLoginEvent();
+        onLoginTextEvent();
+    }
+    //关闭按钮的相关事件
+    private void onCloseEvent(){
+        close.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                Stage stage = (Stage) close.getScene().getWindow();
+                stage.close();
+            }
+        });
+        close.setOnMouseReleased(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                close.setImage(new Image("/image/close.png"));
+            }
+        });
+
+        close.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                close.setImage(new Image("/image/close_on.png"));
+            }
+        });
+
+        close.setOnMouseExited(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                close.setImage(new Image("/image/close.png"));
+            }
+        });
+
+        close.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                close.setImage(new Image("/image/close_click.png"));
+            }
+        });
+    }
+    //最小化按钮的相关事件
+    private void onMinEvent(){
+        min.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                min.setImage(new Image("/image/min_click.png"));
+            }
+        });
+        min.setOnMouseReleased(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                min.setImage(new Image("/image/min.png"));
+            }
+        });
+        min.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                min.setImage(new Image("/image/min_on.png"));
+            }
+        });
+        min.setOnMouseExited(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                min.setImage(new Image("/image/min.png"));
+            }
+        });
+        min.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                Stage stage = (Stage) close.getScene().getWindow();
+                stage.setIconified(true);
+
+            }
+        });
+
+    }
+    //登录按钮的相关事件
+    private void onLoginEvent(){
+        login.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                login.setImage(new Image("/image/login_on.png"));
+            }
+        });
+        login.setOnMouseExited(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                login.setImage(new Image("/image/login.png"));
+            }
+        });
+        login.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                login.setImage(new Image("/image/login_click.png"));
+            }
+        });
+        login.setOnMouseReleased(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                login.setImage(new Image("/image/login.png"));
+            }
+        });
+        //登录认证
+        login.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                usr = new LoginData(acct.getText().toString(), pwd.getText().toString());
+                if(usr.loginAccess() == 0) System.out.println("登录成功");
+                else System.out.println("登录失败");
+            }
+        });
+    }
+    //登录Text相关事件
+    private void onLoginTextEvent(){
+        loginText.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                login.setImage(new Image("/image/login_on.png"));
+            }
+        });
+
+        loginText.setOnMouseExited(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                login.setImage(new Image("/image/login.png"));
+            }
+        });
+
+        loginText.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                login.setImage(new Image("/image/login_click.png"));
+            }
+        });
+        loginText.setOnMouseReleased(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                login.setImage(new Image("/image/login_on.png"));
+            }
+        });
+        loginText.setOnMouseDragEntered(new EventHandler<MouseDragEvent>() {
+            @Override
+            public void handle(MouseDragEvent event) {
+                login.setImage(new Image("/image/login_on.png"));
+            }
+        });
+    }
+}
