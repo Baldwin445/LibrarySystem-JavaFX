@@ -23,7 +23,7 @@ public class Main extends Application {
 //
 //        primaryStage.show();
 
-        initializeDB();
+//        initializeDB();
     }
 
 
@@ -51,8 +51,6 @@ public class Main extends Application {
 
                     System.out.println(a + " " + b + " " + c);
                 }
-//                else
-//                    System.out.println("Not Fount");
             }catch(Exception e){
                 e.printStackTrace();
             }

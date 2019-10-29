@@ -1,5 +1,7 @@
 package login;
 
+import database.ConnectDB;
+
 import java.sql.*;
 
 public class LoginData {
@@ -42,11 +44,21 @@ public class LoginData {
             return -1;
         }
 
+        //Test MySQL
+        try {
+            stmt = ConnectDB.connect();
+            String queryString ="select book_name, cat_id, author from book_info_table";
+            ResultSet rSet = ConnectDB.search(queryString);// 查询数据库，并返回查询结果
+            while(rSet.next()){
+                String a = rSet.getString(1);
+                String b = rSet.getString(2);
+                String c = rSet.getString(3);
 
-
-
-
-
+                System.out.println(a + " " + b + " " + c);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
 
         return 0;
     }
