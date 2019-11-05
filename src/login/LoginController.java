@@ -33,14 +33,13 @@ public class LoginController implements Initializable {
     private TextField acct;
     @FXML
     private Text loginText;
+    @FXML
+    private Text tips;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-//        stage = getStage();
         onButtonEvent();
-        pwd.setPrefColumnCount(30);
-        acct.setPrefColumnCount(30);
 
     }
 
@@ -134,6 +133,7 @@ public class LoginController implements Initializable {
 
     }
     //登录按钮的相关事件
+    //登录验证函数
     private void onLoginEvent(){
         login.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
@@ -163,9 +163,32 @@ public class LoginController implements Initializable {
         login.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                usr = new LoginData(acct.getText().toString(), pwd.getText().toString());
-                if(usr.loginAccess() == 0) System.out.println("登录成功");
-                else System.out.println("登录失败");
+//                System.out.println(acct.getText().toString() + pwd.getText().toString());
+                String str1, str2, queryString;
+                str1 = acct.getText().toString();
+                str2 = pwd.getText().toString();
+                usr = new LoginData(str1, str2);
+
+                //将账号类型判断放在监听类中，若放在登录类LoginData中会导致无响应
+                if(str1.length()>= 5 && str1.substring(0,5).equals("admin"))
+                    queryString = "select admin_id, admin_pwd, admin_limits from admin_info_table";
+                else
+                    queryString ="select acct_id, acct_pwd, role from acct_info_table";
+                switch(usr.loginAccess(queryString)){
+                    case 0:
+                        tips.setText("请输入账号密码");
+                        break;
+                    case -1:
+                        tips.setText("账号不存在");
+                        break;
+                    case -2:
+                        tips.setText("密码错误");
+                        break;
+                    default:
+                        tips.setText("登录成功");
+                        break;
+
+                }
             }
         });
     }

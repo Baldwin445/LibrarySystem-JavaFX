@@ -2,6 +2,7 @@ package sample;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import login.LoginData;
 import login.Login_UI;
 
 import java.sql.*;
@@ -11,8 +12,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Login_UI test = new Login_UI();
-        test.start(primaryStage);
+        launch(primaryStage);
 //        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 //        primaryStage.setTitle("图书馆管理系统");
 //        primaryStage.setScene(new Scene(root, 1500, 875));
@@ -58,5 +58,12 @@ public class Main extends Application {
             ex.printStackTrace();
         }
     }
+
+    //主运行函数
+    public void launch(Stage primaryStage) throws Exception{
+        Login_UI test = new Login_UI();
+        test.start(primaryStage);
+    }
+
 
 }

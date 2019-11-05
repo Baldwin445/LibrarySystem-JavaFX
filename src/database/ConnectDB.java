@@ -23,7 +23,7 @@ public class ConnectDB {
         return stmt;
     }
 
-    //搜索结果静态方法
+    //搜索并返回结果静态方法
     static public ResultSet search(String str){
         try{
             rSet = stmt.executeQuery(str);
@@ -31,5 +31,14 @@ public class ConnectDB {
             e.printStackTrace();
         }
         return rSet;
+    }
+
+    //修改更新数据静态方法
+    static public void update(String str){
+        try{
+            rSet = stmt.executeQuery(str);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
