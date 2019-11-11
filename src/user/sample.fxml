@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="552.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="exit" layoutX="624.0" layoutY="23.0" mnemonicParsing="false" text="退出" />
+      <Label fx:id="name" layoutX="14.0" layoutY="28.0" text="金鱼" />
+      <Label fx:id="user_id" layoutX="101.0" layoutY="28.0" text="172511041000" />
+      <VBox layoutX="-2.0" layoutY="63.0" prefHeight="486.0" prefWidth="116.0">
+         <children>
+            <Button fx:id="homepage" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" text="首页">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="user_info" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" text="个人信息">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="history" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" text="借阅历史">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="order_book" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" text="预约图书">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="search_book" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" text="查询图书">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="recommend" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" text="推荐购买">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="publish" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" text="违规处理">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="acount_manage" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" text="账号管理">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="about" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" text="关于" />
+         </children>
+      </VBox>
+      <AnchorPane layoutX="114.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="357.0" fitWidth="552.0" pickOnBounds="true" preserveRatio="true" />
+            <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎使用广东财经大学图书馆系统！" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

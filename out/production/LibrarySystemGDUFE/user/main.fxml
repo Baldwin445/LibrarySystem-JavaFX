@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.MainController">
+   <top>
+
+      <AnchorPane prefHeight="31.0" prefWidth="835.0" styleClass="dark-gray-theme" BorderPane.alignment="CENTER_LEFT">
+         <ImageView fx:id="min" fitHeight="19.0" fitWidth="15.0" layoutX="824.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/min.png" />
+            </image>
+         </ImageView>
+
+         <ImageView fx:id="close" fitHeight="21.0" fitWidth="13.0" layoutX="859.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/close.png" />
+            </image>
+         </ImageView>
+         <Label fx:id="username" layoutX="10.0" layoutY="6.0" text="金鱼" textFill="#eee9e9">
+            <padding>
+               <Insets left="30.0" right="30.0" />
+            </padding>
+         </Label>
+         <Label fx:id="userID" layoutX="91.0" layoutY="6.0" text="100000" textFill="#f4f2f2" />
+      </AnchorPane>
+   </top>
+   <left>
+      <VBox prefHeight="504.0" prefWidth="139.0" styleClass="dark-theme" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#onHomepageClick" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="首页" />
+            <Button fx:id="informationButton" mnemonicParsing="false" onAction="#onInformationClick" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="个人信息" />
+            <Button fx:id="historyButton" mnemonicParsing="false" onAction="#onHistoryClick" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="借阅历史" />
+            <Button fx:id="requestButton" mnemonicParsing="false" onAction="#onRequestClick" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="预约图书" />
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="查询图书" />
+            <Button fx:id="recommendButton" mnemonicParsing="false" onAction="#onRecommendClick" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="推荐购买" />
+            <Button fx:id="punishButton" mnemonicParsing="false" onAction="#onPunishClick" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="违规处理" />
+            <Button fx:id="accountButton" mnemonicParsing="false" onAction="#onAccountClick" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="账号管理" />
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#onExitClick" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="退出" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <fx:include fx:id="home" source="homepage.fxml" />
+      <fx:include fx:id="userInformation" source="information.fxml" visible="false" />
+      <fx:include fx:id="history" source="history.fxml" visible="false" />
+      <fx:include fx:id="requestBook" source="request_book.fxml" visible="false" />
+      <fx:include fx:id="search" source="search.fxml" visible="false" />
+      <fx:include fx:id="recommend" source="recommend.fxml" visible="false" />
+      <fx:include fx:id="punishManage" source="punish_manage.fxml" visible="false" />
+      <fx:include fx:id="accountManage" source="account_manage.fxml" visible="false" />
+         <fx:include fx:id="exit" source="exit.fxml" visible="false"/>
+      </AnchorPane>
+   </center>
+</BorderPane>

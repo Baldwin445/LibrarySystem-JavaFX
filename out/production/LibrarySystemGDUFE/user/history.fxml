@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HistoryController">
+   <children>
+      <TableView layoutX="37.0" layoutY="27.0" prefHeight="318.0" prefWidth="376.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="书名" />
+            <TableColumn prefWidth="75.0" text="作者" />
+          <TableColumn prefWidth="75.0" text="借书日期" />
+            <TableColumn prefWidth="75.0" text="还书日期" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

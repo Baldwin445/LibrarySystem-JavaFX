@@ -11,6 +11,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.control.TextField;
+import properties.Property;
+import user.UserMain;
 
 
 import java.net.URL;
@@ -186,6 +188,17 @@ public class LoginController implements Initializable {
                         break;
                     default:
                         tips.setText("登录成功");
+
+                        UserMain user = new UserMain();
+                        try {
+                            // 更改配置文件里的ID
+                            Property.updateProperties("ID", acct.getText());
+                            user.start(new Stage());
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                        Stage stage = (Stage) close.getScene().getWindow();
+                        stage.close();
                         break;
 
                 }

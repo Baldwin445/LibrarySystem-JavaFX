@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="428.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HomepageController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="776.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/library_sanshui.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="username" layoutX="125.0" layoutY="32.0" prefHeight="20.0" prefWidth="32.0" text="道理" />
+      <Text layoutX="165.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="，欢迎使用广东财经大学图书馆系统。" />
+   </children>
+</AnchorPane>

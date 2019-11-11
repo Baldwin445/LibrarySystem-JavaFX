@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ExitController">
+   <children>
+      <Button fx:id="logout" layoutX="207.0" layoutY="111.0" mnemonicParsing="false" onAction="#onLogoutClick" styleClass="warning-theme" text="退出登录" />
+      <Button fx:id="exitSystem" layoutX="207.0" layoutY="170.0" mnemonicParsing="false" onAction="#onExitClick" styleClass="warm-theme" text="退出系统" />
+   </children>
+</AnchorPane>
