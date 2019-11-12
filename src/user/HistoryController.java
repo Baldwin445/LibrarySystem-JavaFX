@@ -30,8 +30,6 @@ public class HistoryController {
     @FXML
     private void initialize() throws SQLException {
         ObservableList<BorrowRecord> historyData = FXCollections.observableArrayList(
-                new BorrowRecord("12344", "活着", "余华", "2019-09-04", "2019-07-04"),
-                new BorrowRecord("56779", "兄弟", "余华", "2019-09-04", "2019-08-04")
         );
         // 设置每个column对应的属性
         bookIDCol.setCellValueFactory(new PropertyValueFactory<>("bookID"));
@@ -122,6 +120,8 @@ public class HistoryController {
         stm.executeUpdate(query);
 
         // 写入图书操作记录表
+
+
         AccountManageController.showAlert(Alert.AlertType.INFORMATION, "提示", "续借成功！！");
         initialize();
     }
