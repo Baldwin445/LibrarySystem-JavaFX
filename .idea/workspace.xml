@@ -122,14 +122,15 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="login" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Project\LibrarySystemGDUFE\src\image" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="login" />
     </key>
   </component>
   <component name="RunDashboard">

@@ -59,7 +59,6 @@ public class InformationController {
         Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION, "确定修改？");
         confirmation.setHeaderText("修改");
         Optional<ButtonType> result = confirmation.showAndWait();
-
         if (result.get() == ButtonType.CANCEL) return;
         user.setName(name.getText());
         if (sex.getText().equals("男")) user.setSex("M");
