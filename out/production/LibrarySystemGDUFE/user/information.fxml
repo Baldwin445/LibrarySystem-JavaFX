@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="442.0" prefWidth="600.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.InformationController">
+   <children>
+      <VBox layoutX="76.0" layoutY="15.0" prefHeight="360.0" prefWidth="322.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="姓名：" />
+                  <TextField fx:id="name" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="学号：" />
+                  <TextField fx:id="ID" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="状态：" />
+                  <TextField fx:id="state" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="年龄：" />
+                  <TextField fx:id="age" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="性别：" />
+                  <TextField fx:id="sex" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="学院：" />
+                  <TextField fx:id="faculty" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="专业：" />
+                  <TextField fx:id="major" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="电话：" />
+                  <TextField fx:id="tel" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="邮箱：" />
+                  <TextField fx:id="mail" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="注册时间：" />
+                  <TextField fx:id="registerDate" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
+               <children>
+                  <Label text="到期时间：" />
+                  <TextField fx:id="cancelDate" editable="false" styleClass="text-area" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="76.0" layoutY="387.0" mnemonicParsing="false" onAction="#onModifyClick" styleClass="dark-gray-theme" text="修改" textFill="WHITE" />
+      <Button layoutX="148.0" layoutY="387.0" mnemonicParsing="false" onAction="#onSaveClick" styleClass="dark-gray-theme" text="保存" textFill="WHITE" />
+   </children>
+</AnchorPane>

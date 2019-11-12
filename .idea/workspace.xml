@@ -6,9 +6,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
     </list>
-    <ignored path="JavaFxApplication.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +53,10 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -143,6 +138,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> cd9b8279907e1c489ac67cfb38bc28fd80a0b78f
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -187,6 +184,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -224,12 +222,17 @@
     <option name="width" value="1300" />
     <option name="height" value="1450" />
   </component>
+=======
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectId" id="1TTMOt0AEroNGCABqbhHE7yiGPd" />
+>>>>>>> cd9b8279907e1c489ac67cfb38bc28fd80a0b78f
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -271,6 +274,8 @@
       </pane>
     </panes>
   </component>
+=======
+>>>>>>> cd9b8279907e1c489ac67cfb38bc28fd80a0b78f
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -317,7 +322,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Main">
+=======
+  <component name="RunManager" selected="Application.UserMain">
+>>>>>>> cd9b8279907e1c489ac67cfb38bc28fd80a0b78f
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -366,12 +375,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Property" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="properties.Property" />
+=======
+    <configuration name="UserMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="user.UserMain" />
+>>>>>>> cd9b8279907e1c489ac67cfb38bc28fd80a0b78f
       <module name="LibrarySystemGDUFE" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
+<<<<<<< HEAD
           <option name="PATTERN" value="properties.*" />
           <option name="ENABLED" value="true" />
         </pattern>
@@ -387,6 +402,9 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="login.*" />
+=======
+          <option name="PATTERN" value="user.*" />
+>>>>>>> cd9b8279907e1c489ac67cfb38bc28fd80a0b78f
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -433,9 +451,13 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Application.Register" />
         <item itemvalue="Application.Property" />
         <item itemvalue="Application.Admin" />
+=======
+        <item itemvalue="Application.UserMain" />
+>>>>>>> cd9b8279907e1c489ac67cfb38bc28fd80a0b78f
       </list>
     </recent_temporary>
   </component>
@@ -482,6 +504,7 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="165477000" />
   </component>
+<<<<<<< HEAD
   <component name="ToolWindowManager">
     <frame x="298" y="199" width="1040" height="1160" extended-state="0" />
     <editor active="true" />
@@ -525,6 +548,8 @@
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32984033" />
     </layout>
   </component>
+=======
+>>>>>>> cd9b8279907e1c489ac67cfb38bc28fd80a0b78f
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -544,6 +569,7 @@
       <FILTER>sample.*</FILTER>
     </SUITE>
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/login.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
@@ -852,6 +878,8 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
+=======
+>>>>>>> cd9b8279907e1c489ac67cfb38bc28fd80a0b78f
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
