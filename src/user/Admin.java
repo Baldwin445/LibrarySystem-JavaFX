@@ -58,7 +58,7 @@ public class Admin extends User {
 
         //更新信息状态、管理员ID、处理时间
         queryString = "update recommend_record_table set info_state = " + state + ", admin_id = " + id +
-            "op_date = " + timeStamp + " where isbn = " + isbn;
+            "op_date = '" + timeStamp + "' where isbn = '" + isbn + "'";
 
         try{
             stmt.executeQuery(queryString);
@@ -93,7 +93,7 @@ public class Admin extends User {
             return -1;
         }
         queryString = "insert into bm_record_table (op_id, type, book_id, admin_id, notes) " +      //插入语句
-                "values (" + op_id + ", D , " + bid + " , " + id + " , " + note;
+                "values ('" + op_id + "', D , '" + bid + "' , '" + id + "' , '" + note +"'";
         try{
             stmt.executeQuery(queryString);
         }catch (Exception e){
@@ -237,6 +237,17 @@ public class Admin extends User {
         }
 
         return 0;
+    }
+
+    public static void main(String[] args) {
+       // ConnectDB.update("insert into bm_record_table (op_id, type, book_id, admin_id) " +      //插入语句
+       //         "values (D123, D , 123, 321");
+        Statement stmt = ConnectDB.connect();
+        try{
+            stmt.executeUpdate("insert into bm_record_table (op_id, type, book_id, admin_id, op_time) values ('D123', 'D' , 123, 321, now())");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }

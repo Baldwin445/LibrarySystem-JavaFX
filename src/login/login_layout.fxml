@@ -56,8 +56,8 @@
 <!--         </graphic>-->
 <!--      </Button>-->
       <PasswordField fx:id="pwd" layoutX="571.0" layoutY="342.0" prefColumnCount="16" prefHeight="30.0" prefWidth="168.0" />
-      <Hyperlink layoutX="740.0" layoutY="304.0" text="注册账号" />
-      <Hyperlink layoutX="740.0" layoutY="343.0" text="忘记密码" />
+      <Hyperlink fx:id="reg" layoutX="740.0" layoutY="304.0" text="注册账号" />
+      <Hyperlink fx:id="forget" layoutX="740.0" layoutY="343.0" text="忘记密码" />
       <Text fx:id="tips" fill="RED" layoutX="571.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" />
    </children>
 </AnchorPane>
