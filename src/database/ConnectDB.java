@@ -8,6 +8,19 @@ public class ConnectDB {
     static Statement stmt;
     static ResultSet rSet;
 
+    static {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library?useSSL=false&serverTimezone=UTC", "root", "root");
+
+            stmt = conn.createStatement();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     //数据库连接静态方法
     static public Statement connect(){
         try {
@@ -36,7 +49,7 @@ public class ConnectDB {
     //修改更新数据静态方法
     static public void update(String str){
         try{
-            rSet = stmt.executeQuery(str);
+            stmt.executeUpdate(str);
         }catch (Exception e){
             e.printStackTrace();
         }

@@ -3,6 +3,7 @@ package login;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -37,11 +38,14 @@ public class LoginController implements Initializable {
     private Text loginText;
     @FXML
     private Text tips;
+    @FXML
+    private Hyperlink forget, reg;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         onButtonEvent();
+        hyperLinkEvent();
 
     }
 
@@ -53,6 +57,17 @@ public class LoginController implements Initializable {
 //        return stage;
 //    }
 
+    //超链接监听实现
+    private void hyperLinkEvent(){
+        reg.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+
+                Stage s = (Stage) reg.getScene().getWindow();
+                s.close();
+            }
+        });
+    }
 
     //按钮监听实现
     private void onButtonEvent(){

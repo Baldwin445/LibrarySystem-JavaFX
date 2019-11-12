@@ -2,8 +2,15 @@ package login;
 
 import database.ConnectDB;
 import javafx.scene.Parent;
+import javafx.scene.PointLight;
+import properties.Property;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.sql.*;
+import java.util.Properties;
 import java.util.regex.Pattern;
 
 public class LoginData {
@@ -116,6 +123,27 @@ public class LoginData {
         }catch(Exception e){
             e.printStackTrace();
         }
+
+        //保存用户登录信息进入usr.properties文件中
+        //该写法可能存在覆盖原有信息的风险
+       // Properties usr = new Properties();
+       // try{
+        //    FileOutputStream fos = new FileOutputStream("usr.properties");
+         //   usr.setProperty("acct",acct);
+        //    usr.setProperty("pwd",pwd);
+        //    usr.setProperty("role",Integer.toString(role));
+        //    usr.store(fos, "usr.properties");
+         //   fos.close();
+
+       // }catch(Exception e){
+       //     e.printStackTrace();
+       //     System.out.println("用户信息保存失败！");
+       // }
+        Property.writeProperties("acct", acct);
+        Property.writeProperties("pwd",pwd);
+        Property.writeProperties("role", Integer.toString(role));
+
+
 
         return role;
     }
