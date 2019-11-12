@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane fx:id="pane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.RegisterController">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="18.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/reg/ico_text_v.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="nextstep" fitHeight="37.0" fitWidth="248.0" layoutX="337.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/reg/nextstep.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="close" fitHeight="20.0" fitWidth="20.0" layoutX="866.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="major_tip_context" fitHeight="150.0" fitWidth="200.0" layoutX="742.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/reg/major_tip.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="min" fitHeight="30.0" fitWidth="20.0" layoutX="832.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/min.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="126.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/reg/reg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="step" fitHeight="381.0" fitWidth="762.0" layoutX="70.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/reg/step1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="final_step" fitHeight="248.0" fitWidth="568.0" layoutX="167.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/reg/reg_finish_tip.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="step_one" layoutX="174.0" layoutY="189.0" prefHeight="307.0" prefWidth="553.0">
+         <children>
+            <TextField fx:id="name" layoutX="153.0" layoutY="20.0" prefHeight="37.0" prefWidth="248.0" promptText="真实姓名" />
+            <TextField fx:id="acct" layoutX="153.0" layoutY="90.0" prefHeight="37.0" prefWidth="248.0" promptText="设置账号" />
+            <PasswordField fx:id="pwd1" layoutX="153.0" layoutY="160.0" prefHeight="37.0" prefWidth="248.0" promptText="设置密码" />
+            <PasswordField fx:id="pwd2" layoutX="153.0" layoutY="230.0" prefHeight="37.0" prefWidth="248.0" promptText="重复密码" />
+            <ImageView fx:id="pwd_tip" fitHeight="15.0" fitWidth="15.0" layoutX="411.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/reg/tf_tips.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pwd_tip_context" fitHeight="150.0" fitWidth="200.0" layoutX="419.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/reg/pwd_tips.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="step_two" layoutX="115.0" layoutY="189.0" prefHeight="307.0" prefWidth="670.0">
+         <children>
+            <TextField fx:id="tel" layoutX="44.0" layoutY="220.0" prefHeight="37.0" prefWidth="248.0" promptText="输入电话" />
+            <TextField fx:id="email" layoutX="375.0" layoutY="220.0" prefHeight="37.0" prefWidth="248.0" promptText="输入邮箱" />
+            <TextField fx:id="age" layoutX="375.0" layoutY="100.0" prefHeight="37.0" prefWidth="248.0" promptText="输入年龄" />
+            <TextField fx:id="faculty" layoutX="44.0" layoutY="160.0" prefHeight="37.0" prefWidth="248.0" promptText="输入学院" />
+            <ChoiceBox fx:id="role" layoutX="44.0" layoutY="40.0" prefHeight="2.0" prefWidth="248.0" value="请选择身份">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="请选择身份" />
+                     <String fx:value="教师" />
+                     <String fx:value="学生" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <ChoiceBox fx:id="sex" layoutX="44.0" layoutY="100.0" prefHeight="2.0" prefWidth="248.0" value="请选择性别">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="请选择性别" />
+                     <String fx:value="男" />
+                     <String fx:value="女" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <TextField fx:id="major" layoutX="375.0" layoutY="160.0" prefHeight="37.0" prefWidth="248.0" promptText="输入专业" />
+            <ImageView fx:id="major_tip" fitHeight="15.0" fitWidth="15.0" layoutX="631.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/reg/tf_tips.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
