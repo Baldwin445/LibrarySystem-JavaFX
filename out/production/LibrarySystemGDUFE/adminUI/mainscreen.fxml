@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="835.0" stylesheets="@../CSS/library.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminUI.Controller">
+    <top>
+        <AnchorPane prefHeight="31.0" prefWidth="835.0" styleClass="dark-gray-theme">
+            <children>
+                <ImageView fx:id="min" fitHeight="20.0" fitWidth="20.0" layoutX="785.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/min.jpg" />
+                    </image>
+                </ImageView>
+
+                <ImageView fx:id="close" fitHeight="16.0" fitWidth="16.0" layoutX="805.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/close.jpg" />
+                    </image>
+                </ImageView>
+                <Label fx:id="user_name" layoutX="14.0" layoutY="10.0" prefHeight="15.0" prefWidth="75.0" text="姓名" textFill="#f4f2f2" />
+            <Label fx:id="user_id" layoutX="128.0" layoutY="10.0" prefHeight="15.0" prefWidth="75.0" text="ID" textFill="#f4f2f2" />
+            </children>
+        </AnchorPane>
+    </top>
+
+    <left>
+        <VBox prefHeight="504.0" prefWidth="139.0" styleClass="dark-theme" BorderPane.alignment="CENTER">
+            <children>
+            <Button fx:id="homeButton"   onAction="#onhomeClick"    mnemonicParsing="false"  prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="首页" />
+            <Button fx:id="xzgrtsButton" onAction="#onxzgrtsClick"  mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="新增购入图书" />
+            <Button fx:id="glsjxxButton" onAction="#onglsjxxClick"  mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="管理书籍信息" />
+            <Button fx:id="zczhButton"   onAction="#onzczhClick"    mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="注册账号" />
+            <Button fx:id="glzhButton"   onAction="#onglzhClick"    mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="管理账号" />
+            <Button fx:id="sjjhlsButton" onAction="#onsjjhlsClick"  mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="书籍管理历史" />
+            <Button fx:id="zhgllsButton" onAction="#onzhgllsClick"  mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="账号管理历史" />
+            <Button fx:id="ycxxcxButton" onAction="#onycxxcxClick"  mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="异常信息查询" />
+            <Button fx:id="tcButton"     onAction="#ontcClick"      mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" styleClass="menu-btn" text="退出" />
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane prefHeight="458.0" prefWidth="606.0" styleClass="default-theme">
+            <children>
+                <fx:include fx:id="home"   source="home.fxml" />
+                <fx:include fx:id="xzgrts" source="bookadd.fxml" visible="false"  />
+                <fx:include fx:id="glsjxx" source="bookmanage.fxml" visible="false" />
+                <fx:include fx:id="zczh" source="acctreg.fxml" visible="false" />
+                <fx:include fx:id="glzh" source="acctmanage.fxml" visible="false" />
+                <fx:include fx:id="sjjhls" source="bookmanagehistory.fxml" visible="false"  />
+                <fx:include fx:id="zhglls" source="acctmanage.fxml" visible="false" />
+                <fx:include fx:id="ycxxcx" source="exceptioninfosearch.fxml" visible="false" />
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+        <!--      <AnchorPane fx:id="content" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />-->
+    </center>
+</BorderPane>
