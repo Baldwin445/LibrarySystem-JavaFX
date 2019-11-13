@@ -29,8 +29,7 @@ public class HistoryController {
 
     @FXML
     private void initialize() throws SQLException {
-        ObservableList<BorrowRecord> historyData = FXCollections.observableArrayList(
-        );
+        ObservableList<BorrowRecord> historyData = FXCollections.observableArrayList();
         // 设置每个column对应的属性
         bookIDCol.setCellValueFactory(new PropertyValueFactory<>("bookID"));
         bookNameCol.setCellValueFactory(new PropertyValueFactory<>("bookName"));
@@ -64,7 +63,6 @@ public class HistoryController {
                             } catch (SQLException | ParseException e) {
                                 e.printStackTrace();
                             }
-                            System.out.println("按钮测试: " + borrowRecord);
                         });
                         setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
                         setGraphic(renewButton);
@@ -120,7 +118,8 @@ public class HistoryController {
         stm.executeUpdate(query);
 
         // 写入图书操作记录表
-
+        query = "";
+        stm.executeUpdate(query);
 
         AccountManageController.showAlert(Alert.AlertType.INFORMATION, "提示", "续借成功！！");
         initialize();

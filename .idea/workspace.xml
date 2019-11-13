@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/RequestBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/RequestBookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/request_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/request_book.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/RequestBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/RequestBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/request_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/request_book.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -290,6 +296,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
