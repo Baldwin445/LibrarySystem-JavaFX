@@ -19,6 +19,9 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import properties.RegProperty;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 
 public class RegisterController {
     private int count = 1;
@@ -386,17 +389,7 @@ public class RegisterController {
         pwd1 = this.pwd1.getText().toString();
         pwd2 = this.pwd2.getText().toString();
 
-        //检测是否为空
-        if(acct.equals("")) this.acct.setStyle("-fx-border-color: #FF0000;");
-        if(name.equals("")) this.name.setStyle("-fx-border-color: #FF0000;");
-        if(pwd1.equals("")) this.pwd1.setStyle("-fx-border-color: #FF0000;");
-        if(pwd2.equals("")) this.pwd2.setStyle("-fx-border-color: #FF0000;");
-
-        //检测是否正确重复输入密码
-        if(!pwd2.equals("") && pwd1.equals(pwd2)){
-            RegProperty.writeProperties("acct", acct);
-            RegProperty.writeProperties("name", name);
-            RegProperty.writeProperties("pwd", pwd2);
+        if(checkStep1Input()){
             count++;
             step_one.setVisible(false);
             step_two.setVisible(true);
@@ -404,11 +397,6 @@ public class RegisterController {
 
             defaultFocus();                     //恢复默认聚焦点
         }
-        else{
-            this.pwd2.setStyle("-fx-border-color: #FF0000;");
-        }
-
-
 
     }
 
@@ -550,6 +538,40 @@ public class RegisterController {
             }
         });
 
+    }
+
+    private boolean checkStep1Input(){
+        //检测是否为空
+        if(acct.getText().equals("")) acct.setStyle("-fx-border-color: #FF0000;");
+        if(name.getText().equals("")) name.setStyle("-fx-border-color: #FF0000;");
+        if(pwd1.getText().equals("")) pwd1.setStyle("-fx-border-color: #FF0000;");
+        if(pwd2.getText().equals("")) pwd2.setStyle("-fx-border-color: #FF0000;");
+
+        //检测是否正确重复输入密码
+        if(!pwd2.getText().equals("") && pwd1.getText().equals(pwd2.getText())){
+            RegProperty.writeProperties("acct", acct.getText());
+            RegProperty.writeProperties("name", name.getText());
+            RegProperty.writeProperties("pwd", pwd2.getText());
+        }
+        else{
+            pwd2.setStyle("-fx-border-color: #FF0000;");
+            return false;
+        }
+
+        //检测是否存在同账号
+        try {
+            ResultSet rSet = ConnectDB.search("select acct_id from acct_info_table " +
+                    "where acct_id = '" + acct.getText() +"'");
+            if(rSet.next()) {
+                System.out.println(rSet.getString(1));
+                acct.setStyle("-fx-border-color: #FF0000;");
+                return false;
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return true;
     }
 
 }

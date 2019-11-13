@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.ForgetPwdController">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="18.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/reg/ico_text_v.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="126.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/find_pwd/findpwd.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="final_step" fitHeight="248.0" fitWidth="568.0" layoutX="167.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/find_pwd/pwd_finish.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="min" fitHeight="30.0" fitWidth="20.0" layoutX="839.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/min.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="close" fitHeight="20.0" fitWidth="20.0" layoutX="866.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="step" fitHeight="381.0" fitWidth="762.0" layoutX="70.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/find_pwd/s1.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="step_two" layoutX="174.0" layoutY="189.0" prefHeight="307.0" prefWidth="553.0">
+         <children>
+            <PasswordField fx:id="pwd1" layoutX="176.0" layoutY="84.0" promptText="设置密码" />
+            <PasswordField fx:id="pwd2" layoutX="176.0" layoutY="186.0" promptText="再输入密码" />
+         </children>
+      </Pane>
+      <Pane fx:id="step_one" layoutX="115.0" layoutY="189.0" prefHeight="307.0" prefWidth="670.0">
+         <children>
+            <TextField fx:id="acct" layoutX="73.0" layoutY="49.0" promptText="账号" />
+            <TextField fx:id="name" layoutX="381.0" layoutY="49.0" promptText="姓名" />
+            <TextField fx:id="faculty" layoutX="73.0" layoutY="139.0" promptText="所属学院" />
+            <TextField fx:id="email" layoutX="381.0" layoutY="139.0" promptText="邮箱" />
+            <TextField fx:id="tel" layoutX="234.0" layoutY="229.0" promptText="电话" />
+            <Text fx:id="warn" fill="RED" layoutX="466.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Pane>
+      <ImageView fx:id="nextstep" fitHeight="37.0" fitWidth="248.0" layoutX="337.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/reg/nextstep.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

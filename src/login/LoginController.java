@@ -62,9 +62,30 @@ public class LoginController implements Initializable {
         reg.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-
+                Register r = new Register();
                 Stage s = (Stage) reg.getScene().getWindow();
                 s.close();
+                try {
+                    r.start(new Stage());
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+
+
+            }
+        });
+
+        forget.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                ForgetPwd fp = new ForgetPwd();
+                Stage s = (Stage) reg.getScene().getWindow();
+                s.close();
+                try {
+                    fp.start(new Stage());
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
     }

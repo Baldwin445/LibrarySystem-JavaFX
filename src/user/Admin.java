@@ -3,12 +3,11 @@ package user;
 import database.ConnectDB;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Admin extends User {
-    String acct;
-    String pwd;
-    String id;
+    String name, pwd, id, state, limits, sex, tel, email, age;
     private String queryString;
     private Statement stmt;
     private ResultSet rSet;
@@ -16,10 +15,29 @@ public class Admin extends User {
     public Admin(){
 
     }
-    public Admin(String acct, String pwd, String id){
-        this.acct = acct;
+    public Admin(String name, String pwd, String id){
+        this.name = name;
         this.pwd = pwd;
         this.id = id;
+    }
+    public Admin(String id) throws SQLException {
+        this.id = id;
+        queryString = "select * from admin_info_table where admin_id =\"" + id + "\"";
+        name = rSet.getString("admin_name");
+        pwd = rSet.getString("admin_pwd");
+        state = rSet.getString("admin_state");
+        limits = rSet.getString("admin_limits");
+        sex = rSet.getString("admin_sex");
+        age = rSet.getString("admin_age");
+        tel = rSet.getString("admin_tel");
+        email = rSet.getString("admin_email");
+        try {
+            rSet = stmt.executeQuery(queryString);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
     }
 
     /* showRecommendList
@@ -239,15 +257,123 @@ public class Admin extends User {
         return 0;
     }
 
-    public static void main(String[] args) {
-       // ConnectDB.update("insert into bm_record_table (op_id, type, book_id, admin_id) " +      //插入语句
-       //         "values (D123, D , 123, 321");
+    /* modifyPwd(int uid)修改用户密码
+    int uid: 传入一个用户id作为修改对象
+    测试通过
+     */
+    public int modifyPwd(String uid){
         Statement stmt = ConnectDB.connect();
-        try{
-            stmt.executeUpdate("insert into bm_record_table (op_id, type, book_id, admin_id, op_time) values ('D123', 'D' , 123, 321, now())");
+        try {
+            rSet = stmt.executeQuery("select acct_id, acct_pwd from acct_info_table where acct_id = '" + uid + "'");
+            while(rSet.next())
+                System.out.println(rSet.getString(1)+ " " +rSet.getString(2));
         }catch (Exception e){
             e.printStackTrace();
         }
+        return 0;
+    }
+
+    /* setLost(String uid, String state) 设置借阅证状态
+    int uid: 传入一个用户id作为修改对象
+    String state：传入需要修改的状态
+    逻辑：检查用户状态，用户状态为N则修改为传入的状态，用户状态非N则在原状态字段中添加状态字段
+     */
+    public int setState(String uid, String state){
+        Admin admin = new Admin();
+        String stateText = new String();
+        Statement stmt = ConnectDB.connect();
+        try {
+            rSet = stmt.executeQuery("select admin_id, admin_state from admin_info_table where admin_id = '" + uid + "'");
+            System.out.println(rSet.getString(1)+ " " + rSet.getString(2));
+            if(state.equals("N"))
+                stmt.executeUpdate("update admin_info_table set admin_state = 'N' where admin_id= '" + uid + "'");
+            else
+                if(admin.getState().equals("N"))
+                    stmt.executeUpdate("update admin_info_table set admin_state = '"+ state +"' where admin_id= '" + uid + "'");
+                else {
+                    state = this.state + state;
+                    stmt.executeUpdate("update admin_info_table set admin_state = '"+ state +"' where admin_id= '" + uid + "'");
+                }
+            System.out.println(rSet.getString(1)+ " " + rSet.getString(2));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return 0;
+    }
+
+
+
+    /*********************分割符：属性get/set********************/
+    @Override
+    public String getPwd() {
+        return pwd;
+    }
+
+    @Override
+    public String getAcct() {
+        return acct;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+    public String getId() {
+        return id;
+    }
+    public String getLimits() {
+        return limits;
+    }
+    public String getAge() {
+        return age;
+    }
+    public String getSex() {
+        return sex;
+    }
+    public String getState() {
+        return state;
+    }
+    public String getTel() {
+        return tel;
+    }
+
+    @Override
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
+    }
+    @Override
+    public void setAcct(String acct) {
+        this.acct = acct;
+    }
+    public void setAge(String age) {
+        this.age = age;
+    }
+    public void setId(String id) {
+        this.id = id;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public void setLimits(String limits) {
+        this.limits = limits;
+    }
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+    public void setState(String state) {
+        this.state = state;
+    }
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
+    /************************************************************/
+
+
+
+    public static void main(String[] args) {
+       Admin a = new Admin();
+       a.setState("170001","F");
     }
 
 }
