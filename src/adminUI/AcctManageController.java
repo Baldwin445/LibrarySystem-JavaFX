@@ -105,10 +105,10 @@ public class AcctManageController {
                 if(rSet.getString(8).equals("N")) state = "正常";
                 else
                     if(rSet.getString(8).contains("F"))
-                        state += "冻结 ";
+                        state += "冻结";
                     else
                         if(rSet.getString(8).contains("L"))
-                            state += "挂失 ";
+                            state += "挂失";
                         else
                             if(rSet.getString(8).contains("D"))
                                 state += "欠费";
@@ -206,14 +206,16 @@ public class AcctManageController {
         lostFind.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                String state = table.getSelectionModel().getSelectedItem().getState();
                 if(choice.getValue().equals("管理员"))
                     return;
-                if(state.contains("挂失")){
-                    lostFind(table.getSelectionModel().getSelectedItem().getAcct());
-                    lostFind.setText("解挂");
-                }
-                else lostFind.setText("挂失");
+                lostFind(table.getSelectionModel().getSelectedItem().getAcct());
+            }
+        });
+        //注销账号功能
+        logout.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                deleteAcct(table.getSelectionModel().getSelectedItem().getAcct());
             }
         });
     }
@@ -305,33 +307,14 @@ public class AcctManageController {
 
     /********解挂挂失*********/
     private void lostFind(String id){
-        String state;
-        try {
-            state = table.getSelectionModel().getSelectedItem().getState();
-            state = deleteChars(state);
-            table.getSelectionModel().getSelectedItem().setState("正常");
-        }catch (Exception e){
-            System.out.println("修改表格状态失败！");
-            return;
+        if(table.getSelectionModel().getSelectedItem().getState().contains("挂失")){
+            setStateToFind(id);
+            lostFind.setText("挂失");
         }
-
-        String stateEN = "";
-        try{
-            if(state.contains("冻结"))
-                stateEN += "F";
-            else if(state.contains("欠费"))
-                stateEN += "D";
-            else stateEN = "N";
-            ConnectDB.update("UPDATE acct_info_table SET acct_state = '"+stateEN+"'" +
-                    " WHERE acct_id = '"+id+"'");
-        }catch (Exception e){
-            System.out.println("修改数据库状态失败！");
-            return;
+        else {
+            setStateToLost(id);
+            lostFind.setText("解挂");
         }
-
-        addAcctManageRecord(id, "S");
-
-
 
     }
 
@@ -351,6 +334,88 @@ public class AcctManageController {
             }
         }
         return deleteString;
+
+    }
+
+    /*******切换借阅证的挂失状态**************/
+    private void setStateToLost(String id){
+        String state = table.getSelectionModel().getSelectedItem().getState();
+        String stateEN = "";
+        if(state.equals("正常")){                                                 //检查现有状态并进行修改
+            stateEN = "L";
+            table.getSelectionModel().getSelectedItem().setState("挂失");
+        }
+        else{
+            stateEN += "L";
+            if(state.contains("冻结")) {
+                stateEN += "F";
+            }
+            if(state.contains("欠费")) {
+                stateEN += "D";
+            }
+            table.getSelectionModel().getSelectedItem().setState(state+"挂失");
+        }
+
+        //修改数据库数据
+        try {
+            ConnectDB.update("UPDATE acct_info_table SET acct_state = '"+stateEN+"' " +
+                    "WHERE acct_id = '"+id+"'");
+        }catch (Exception e){
+            System.out.println("修改数据库数据失败！");
+            return;
+        }
+
+        addAcctManageRecord(id, "L");
+        return;
+
+    }
+    /*******切换借阅证的找回状态**************/
+    private void setStateToFind(String id){
+        String state = table.getSelectionModel().getSelectedItem().getState();
+        String stateEN = "";
+        if(state.equals("挂失")){
+            table.getSelectionModel().getSelectedItem().setState("正常");
+            stateEN = "N";
+        }
+        else {
+            if(state.contains("冻结"))
+                stateEN += "F";
+            if(state.contains("欠费"))
+                stateEN += "D";
+            table.getSelectionModel().getSelectedItem().setState(deleteChars(state));
+        }
+
+        //修改数据库数据
+        try {
+            ConnectDB.update("UPDATE acct_info_table SET acct_state = '"+stateEN+"' " +
+                    "WHERE acct_id = '"+id+"'");
+        }catch (Exception e){
+            System.out.println("修改数据库数据失败！");
+            return;
+        }
+
+        addAcctManageRecord(id, "F");
+
+        return;
+    }
+
+    /********注销账号*********/
+    private void deleteAcct(String id) {
+        try {
+            addData.remove(table.getSelectionModel().getSelectedItem());
+        } catch (Exception e) {
+            System.out.println("删除表格记录失败");
+            return;
+        }
+
+        try {
+            ConnectDB.update("DELETE FROM acct_info_table WHERE acct_id = '" + id + "'");
+        } catch (Exception e) {
+            System.out.println("删除数据库记录失败");
+            return;
+        }
+
+        addAcctManageRecord(id, "C");
 
     }
 

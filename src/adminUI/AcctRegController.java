@@ -528,7 +528,7 @@ public class AcctRegController {
                 String sql = "INSERT INTO acct_info_table VALUES " + VALUES;
                 ConnectDB.update(sql);
                 ConnectDB.update("update acct_info_table set cancel_date = " +
-                        "DATE_ADD(cancel_date, INTERVAL 4 YEAR)  Where acct_id = '"+ acct +"'");
+                        "DATE_ADD(cancel_date, INTERVAL 4 YEAR)  Where acct_id = '"+ begin +"'");
 
                 //记录操作
                 ConnectDB.update("INSERT INTO am_record_table VALUES ('R"+ rec_id +"', 'R', '"+

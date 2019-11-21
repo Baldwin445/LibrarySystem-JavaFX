@@ -2,72 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04a088db-86fb-416d-b1c0-acc1cd26a5ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/acctmanage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/acctmanage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/acctreg.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/acctreg.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/bookadd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/bookadd.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/bookmanage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/bookmanage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/mainscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/mainscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/css/library.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/css/library.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$18.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$19.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/AccountManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/AccountManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/InformationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/InformationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/RequestBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/RequestBookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/account_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/account_manage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/exit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/exit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/history.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/homepage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/information.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/punish_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/punish_manage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/recommend.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/recommend.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/request_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/request_book.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/AcctManage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/AcctReg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/AdminMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/AdminMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/BookAdd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/BookManage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adminUI/AcctManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/AcctManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adminUI/AcctManageHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/AcctManageHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adminUI/AcctRegController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/AcctRegController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adminUI/acctmanage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/acctmanage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/acctreg.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/acctreg.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/bookadd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/bookadd.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/bookmanage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/bookmanage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adminUI/mainscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/mainscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/library.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/library.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/AccountManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/AccountManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/HistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/InformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/InformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/PunishManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/PunishManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/RequestBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/RequestBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/account_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/account_manage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/exit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/exit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/history.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/homepage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/information.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/punish_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/punish_manage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/recommend.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/recommend.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/request_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/request_book.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adminUI/acctmanagehistory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/acctmanagehistory.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,39 +34,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/adminUI/acctmanagehistory.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/adminUI/AcctManageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="311" column="68" selection-start-line="311" selection-start-column="68" selection-end-line="311" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#choiceValueEvent#0;class#AcctManageController#0" />
-                <element signature="method#tableFocusContext#0;class#AcctManageController#0" />
-                <element signature="method#searchEvent#0;class#AcctManageController#0" />
-                <element signature="class#7042:7252" />
-                <element signature="class#7302:7516" />
-                <element signature="method#modifyPwd#0;class#AcctManageController#0" />
-                <element signature="method#clearException#0;class#AcctManageController#0" />
-                <element signature="method#addAcctManageRecord#0;class#AcctManageController#0" />
-                <element signature="method#deleteChars#0;class#AcctManageController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -138,14 +46,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>zhi</find>
-      <find>systou</find>
-      <find>open</find>
-      <find>UPDATE</find>
-      <find>#</find>
-      <find>major</find>
-      <find>now()</find>
-      <find>USER1</find>
       <find>choice</find>
       <find>adminemail</find>
       <find>所有</find>
@@ -168,6 +68,14 @@
       <find>Thread</find>
       <find>v</find>
       <find>runable</find>
+      <find>ADD</find>
+      <find>dateadd</find>
+      <find>add</find>
+      <find>date</find>
+      <find>table.getSelectionModel().getSelectedItem().set</find>
+      <find>delete</find>
+      <find>注销</find>
+      <find>set</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,15 +107,12 @@
         <option value="$PROJECT_DIR$/src/adminUI/BookAddController.java" />
         <option value="$PROJECT_DIR$/data.properties" />
         <option value="$PROJECT_DIR$/src/adminUI/acctreg.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/AcctRegController.java" />
         <option value="$PROJECT_DIR$/src/adminUI/BookManageRecord.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/acctmanage.fxml" />
         <option value="$PROJECT_DIR$/src/adminUI/mainscreen.fxml" />
         <option value="$PROJECT_DIR$/src/adminUI/bookmanagehistory.fxml" />
         <option value="$PROJECT_DIR$/src/adminUI/BookMHistoryRecord.java" />
         <option value="$PROJECT_DIR$/src/adminUI/AcctMHistoryRecord.java" />
         <option value="$PROJECT_DIR$/src/adminUI/acctmanagehistory.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/AcctManageHistoryController.java" />
         <option value="$PROJECT_DIR$/src/adminUI/exceptioninfosearch.fxml" />
         <option value="$PROJECT_DIR$/src/adminUI/ExceptionInfoRecord.java" />
         <option value="$PROJECT_DIR$/src/adminUI/BookBRHistroyRecord.java" />
@@ -218,6 +123,9 @@
         <option value="$PROJECT_DIR$/src/adminUI/BookManageHistoryController.java" />
         <option value="$PROJECT_DIR$/src/adminUI/BookManageController.java" />
         <option value="$PROJECT_DIR$/src/adminUI/AcctManageRecord.java" />
+        <option value="$PROJECT_DIR$/src/adminUI/acctmanage.fxml" />
+        <option value="$PROJECT_DIR$/src/adminUI/AcctRegController.java" />
+        <option value="$PROJECT_DIR$/src/adminUI/AcctManageHistoryController.java" />
         <option value="$PROJECT_DIR$/src/adminUI/AcctManageController.java" />
       </list>
     </option>
@@ -230,9 +138,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-90" />
-    <option name="y" value="-33" />
-    <option name="width" value="2578" />
-    <option name="height" value="1458" />
+    <option name="y" value="-34" />
+    <option name="width" value="2579" />
+    <option name="height" value="1459" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -286,38 +194,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.AdminMain">
-    <configuration name="AcctRegController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="adminUI.AcctRegController" />
-      <module name="LibrarySystemGDUFE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="adminUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AdminMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="adminUI.AdminMain" />
       <module name="LibrarySystemGDUFE" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="adminUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ForgetPwd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="login.ForgetPwd" />
-      <module name="LibrarySystemGDUFE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -351,13 +233,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.AdminMain" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.UserMain" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AdminMain" />
-        <item itemvalue="Application.UserMain" />
-        <item itemvalue="Application.AcctRegController" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ForgetPwd" />
+        <item itemvalue="Application.UserMain" />
       </list>
     </recent_temporary>
   </component>
@@ -389,11 +274,12 @@
       <workItem from="1574159964079" duration="3316000" />
       <workItem from="1574170645547" duration="692000" />
       <workItem from="1574171795820" duration="52851000" />
+      <workItem from="1574302128718" duration="13571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169564000" />
+    <option name="totallyTimeSpent" value="183135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,7 +293,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1166" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18562874" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18762475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -416,7 +302,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294686" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3178744" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3172147" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990338" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -426,7 +312,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49951172" weight="0.33017975" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004883" side_tool="true" weight="0.32261115" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32753623" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32688588" />
       <window_info anchor="bottom" id="Statistic" order="13" sideWeight="0.49951172" weight="0.32270533" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -500,27 +386,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/user/search.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/RequestBookController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -537,8 +409,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/request_book.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/lib/mysql-connector-java-8.0.18.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -572,36 +444,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/login/register_layout.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="37" selection-start-column="37" selection-end-column="37" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/login/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="466" column="57" selection-start-line="478" selection-start-column="8" selection-end-line="479" selection-end-column="88" />
-          <folding>
-            <element signature="e#1251#1821#0" />
-            <element signature="e#1828#4088#0" />
-            <element signature="e#4094#7908#0" />
-            <element signature="e#7913#10352#0" />
-            <element signature="e#8821#8822#0" expanded="true" />
-            <element signature="e#8891#8892#0" expanded="true" />
-            <element signature="e#9089#9090#0" expanded="true" />
-            <element signature="e#9159#9160#0" expanded="true" />
-            <element signature="e#10357#12218#0" />
-            <element signature="e#12080#12081#0" expanded="true" />
-            <element signature="e#12163#12164#0" expanded="true" />
-            <element signature="e#12224#13457#0" />
-            <element signature="e#13462#14678#0" />
-            <element signature="e#19770#20846#0" />
-            <element signature="e#20852#22128#0" />
-          </folding>
-        </state>
-      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/Scene.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -639,12 +487,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/acctreg.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="46" column="19" selection-start-line="40" selection-start-column="11" selection-end-line="46" selection-end-column="19" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -654,36 +502,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/bookadd.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="48" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="48" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/AdminMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/bookmanage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="36" column="133" selection-start-line="36" selection-start-column="133" selection-end-line="36" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctMHistoryRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,28 +524,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/mainscreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/exceptioninfosearch.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/bookbrhistory.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/BookBRHistroyRecord.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -729,21 +558,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/ExceptionInfoSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1692">
-          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/user/history.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75" />
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/ConnectDB.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -766,23 +585,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookAddController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="138" column="63" selection-start-line="136" selection-start-column="12" selection-end-line="138" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/bookmanagehistory.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="40" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/SelectionModel.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -848,14 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/acctmanage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="43" column="17" selection-start-line="37" selection-start-column="9" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/BookManageRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -867,22 +668,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctManageHistoryController.java">
+    <entry file="file://$PROJECT_DIR$/src/adminUI/BookMHistoryRecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#choiceEvent#0;class#AcctManageHistoryController#0" />
-            <element signature="method#searchEvent#0;class#AcctManageHistoryController#0" />
-          </folding>
+        <state relative-caret-position="433">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/AddRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/acctmanagehistory.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/acctmanage.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login/ForgetPwdController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/AdminMainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="369">
+          <caret line="85" column="40" lean-forward="true" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
           <folding>
             <element signature="e#1910#1911#0" expanded="true" />
             <element signature="e#1949#1950#0" expanded="true" />
@@ -896,8 +722,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/BookBRHistoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
+        <state relative-caret-position="393">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/BookAddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="143" column="34" lean-forward="true" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -906,8 +742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/BookManageHistoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="53" column="37" lean-forward="true" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        <state relative-caret-position="443">
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#choiceEvent#0;class#BookManageHistoryController#0" />
@@ -916,17 +752,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookMHistoryRecord.java">
+    <entry file="file://$PROJECT_DIR$/src/login/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="12" />
+        <state relative-caret-position="469">
+          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctMHistoryRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctManageHistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#choiceEvent#0;class#AcctManageHistoryController#0" />
+            <element signature="method#searchEvent#0;class#AcctManageHistoryController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="409" lean-forward="true" selection-start-line="409" selection-end-line="409" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#choiceValueEvent#0;class#AcctManageController#0" />
+            <element signature="method#tableFocusContext#0;class#AcctManageController#0" />
+            <element signature="method#initTable#0;class#AcctManageController#0" />
+            <element signature="method#searchEvent#0;class#AcctManageController#0" />
+            <element signature="e#8565#8566#0" expanded="true" />
+            <element signature="e#8662#8663#0" expanded="true" />
+            <element signature="method#modifyPwd#0;class#AcctManageController#0" />
+            <element signature="method#clearException#0;class#AcctManageController#0" />
+            <element signature="method#addAcctManageRecord#0;class#AcctManageController#0" />
+            <element signature="method#lostFind#0;class#AcctManageController#0" />
+            <element signature="method#deleteChars#0;class#AcctManageController#0" />
+            <element signature="method#setStateToLost#0;class#AcctManageController#0" />
+            <element signature="method#setStateToFind#0;class#AcctManageController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="494" column="44" lean-forward="true" selection-start-line="494" selection-start-column="44" selection-end-line="494" selection-end-column="44" />
+          <folding>
+            <element signature="e#1251#1821#0" />
+            <element signature="e#1828#4088#0" />
+            <element signature="e#4094#7908#0" />
+            <element signature="e#7913#10352#0" />
+            <element signature="e#10357#12218#0" />
+            <element signature="e#12224#13457#0" />
+            <element signature="e#13462#14678#0" />
+            <element signature="e#19770#20846#0" />
+            <element signature="e#20852#22128#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/bookmanage.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="36" column="133" selection-start-line="36" selection-start-column="133" selection-end-line="36" selection-end-column="133" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/BookManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="386" column="82" lean-forward="true" selection-start-line="386" selection-start-column="30" selection-end-line="386" selection-end-column="82" />
+          <folding>
+            <element signature="e#1668#2601#0" />
+            <element signature="e#2607#2864#0" />
+            <element signature="e#2870#4850#0" />
+            <element signature="e#4856#6568#0" />
+            <element signature="e#6574#7079#0" />
+            <element signature="e#7085#8225#0" />
+            <element signature="e#8231#8554#0" />
+            <element signature="e#8560#9590#0" />
+            <element signature="e#9617#12074#0" />
+            <element signature="e#12080#13576#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/ExceptionInfoSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="93" column="35" lean-forward="true" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initTable#0;class#ExceptionInfoSearch#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/AcctRegController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="208">
+          <caret line="557" column="22" selection-start-line="557" selection-start-column="19" selection-end-line="557" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initShowState#0;class#AcctRegController#0" />
@@ -937,59 +875,6 @@
             <element signature="method#checkAdminInput#0;class#AcctRegController#0" />
             <element signature="method#checkUsrInput#0;class#AcctRegController#0" />
             <element signature="method#usrRegSingle#0;class#AcctRegController#0" />
-            <element signature="method#usrRegMultiple#0;class#AcctRegController#0" />
-            <element signature="method#clearAll#0;class#AcctRegController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AddRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="394" column="88" lean-forward="true" selection-start-line="394" selection-start-column="52" selection-end-line="394" selection-end-column="88" />
-          <folding>
-            <element signature="e#1668#2601#0" />
-            <element signature="e#2607#2864#0" />
-            <element signature="e#2870#4850#0" />
-            <element signature="e#4856#6568#0" />
-            <element signature="e#6574#7079#0" />
-            <element signature="e#8231#8554#0" />
-            <element signature="e#8560#9590#0" />
-            <element signature="e#9617#12074#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/acctmanagehistory.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="311" column="68" selection-start-line="311" selection-start-column="68" selection-end-line="311" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#choiceValueEvent#0;class#AcctManageController#0" />
-            <element signature="method#tableFocusContext#0;class#AcctManageController#0" />
-            <element signature="method#searchEvent#0;class#AcctManageController#0" />
-            <element signature="class#7042:7252" />
-            <element signature="class#7302:7516" />
-            <element signature="method#modifyPwd#0;class#AcctManageController#0" />
-            <element signature="method#clearException#0;class#AcctManageController#0" />
-            <element signature="method#addAcctManageRecord#0;class#AcctManageController#0" />
-            <element signature="method#deleteChars#0;class#AcctManageController#0" />
           </folding>
         </state>
       </provider>

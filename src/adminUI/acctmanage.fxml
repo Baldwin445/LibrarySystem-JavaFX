@@ -30,9 +30,9 @@
       </TableView>
       <Button fx:id="search" layoutX="483.0" layoutY="16.0" mnemonicParsing="false" text="搜索" />
       <Button fx:id="modifyPwd" layoutX="470.0" layoutY="535.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="恢复密码" />
-      <Button fx:id="lostFind" layoutX="670.0" layoutY="535.0" mnemonicParsing="false" prefWidth="80.0" text="挂失" />
-      <Button fx:id="resolve" layoutX="570.0" layoutY="535.0" mnemonicParsing="false" text="解除异常" />
-      <Button fx:id="logout" layoutX="775.0" layoutY="535.0" mnemonicParsing="false" text="账号注销" />
+      <Button fx:id="lostFind" layoutX="670.0" layoutY="535.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="挂失" />
+      <Button fx:id="resolve" layoutX="570.0" layoutY="535.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="解除异常" />
+      <Button fx:id="logout" layoutX="775.0" layoutY="535.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="账号注销" />
       <TextField fx:id="acctText" layoutX="21.0" layoutY="16.0" prefHeight="30.0" prefWidth="148.0" promptText="账号ID" />
       <ChoiceBox fx:id="choice" layoutX="367.0" layoutY="16.0" prefHeight="30.0" prefWidth="97.0" value="学生">
          <items>

@@ -52,7 +52,8 @@ public class AcctManageHistoryController {
         try{
             while(rSet.next()){
                 String type = rSet.getString(2);
-                if(type.equals("L")) type = "登录";
+                if(type.equals("L")) type = "挂失";
+                if(type.equals("F")) type = "解挂";
                 if(type.equals("R")) type = "注册账号";
                 if(type.equals("C")) type = "注销账号";
                 if(type.equals("M")) type = "修改密码";
