@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
@@ -9,31 +12,38 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminUI.AcctManage" fx:id="glzh">
+<AnchorPane fx:id="glzh" prefHeight="575.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminUI.AcctManageController">
    <children>
-      <TableView layoutX="33.0" layoutY="54.0" prefHeight="304.0" prefWidth="541.0">
+      <TableView fx:id="table" layoutX="1.0" layoutY="58.0" prefHeight="465.0" prefWidth="870.0">
          <columns>
-            <TableColumn prefWidth="165.0" text="用户账号" />
-            <TableColumn prefWidth="196.0" text="用户姓名" />
-            <TableColumn prefWidth="179.0" text="账号状态" />
+            <TableColumn fx:id="acct" prefWidth="90.0" text="账号" />
+            <TableColumn fx:id="name" prefWidth="110.0" text="姓名" />
+            <TableColumn fx:id="sex" prefWidth="90.0" text="性别" />
+            <TableColumn fx:id="age" prefWidth="90.0" text="年龄" />
+            <TableColumn fx:id="tel" prefWidth="130.0" text="电话" />
+            <TableColumn fx:id="email" prefWidth="130.0" text="邮箱" />
+            <TableColumn fx:id="role" prefWidth="90.0" text="身份" />
+            <TableColumn fx:id="state" prefWidth="110.0" text="账号状态" />
          </columns>
       </TableView>
-      <HBox layoutX="25.0" layoutY="16.0" prefHeight="23.0" prefWidth="432.0">
-         <children>
-            <Label prefWidth="50.0" text="用户ID：" />
-            <TextField prefHeight="11.0" prefWidth="70.0" />
-            <Label prefWidth="60.0" text="用户姓名：" />
-            <TextField prefHeight="20.0" prefWidth="70.0" />
-            <Label prefWidth="65.0" text="用户类型：" />
-            <ComboBox prefHeight="23.0" prefWidth="84.0" />
-         </children>
-      </HBox>
-      <Button layoutX="478.0" layoutY="16.0" mnemonicParsing="false" text="搜索" />
-      <Button layoutX="55.0" layoutY="375.0" mnemonicParsing="false" text="修改密码" />
-      <Button layoutX="358.0" layoutY="375.0" mnemonicParsing="false" text="挂失/解挂" />
-      <Button layoutX="201.0" layoutY="375.0" mnemonicParsing="false" text="账号注销" />
-      <Button layoutX="498.0" layoutY="375.0" mnemonicParsing="false" text="解除异常" />
+      <Button fx:id="search" layoutX="483.0" layoutY="16.0" mnemonicParsing="false" text="搜索" />
+      <Button fx:id="modifyPwd" layoutX="470.0" layoutY="535.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="恢复密码" />
+      <Button fx:id="lostFind" layoutX="670.0" layoutY="535.0" mnemonicParsing="false" prefWidth="80.0" text="挂失" />
+      <Button fx:id="resolve" layoutX="570.0" layoutY="535.0" mnemonicParsing="false" text="解除异常" />
+      <Button fx:id="logout" layoutX="775.0" layoutY="535.0" mnemonicParsing="false" text="账号注销" />
+      <TextField fx:id="acctText" layoutX="21.0" layoutY="16.0" prefHeight="30.0" prefWidth="148.0" promptText="账号ID" />
+      <ChoiceBox fx:id="choice" layoutX="367.0" layoutY="16.0" prefHeight="30.0" prefWidth="97.0" value="学生">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="学生" />
+               <String fx:value="教师" />
+               <String fx:value="管理员" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <TextField fx:id="nameText" layoutX="197.0" layoutY="16.0" prefHeight="30.0" prefWidth="148.0" promptText="姓名" />
+      <Label fx:id="tips" layoutX="21.0" layoutY="535.0" textFill="RED" />
    </children>
 </AnchorPane>

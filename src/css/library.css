@@ -265,20 +265,52 @@ AnchorPane {
   -fx-background-color: white;
 }
 
-.text-area{
-    -fx-background-insets: 0;
-    -fx-background-color: transparent, white, transparent, white;
+.text-area {
+  -fx-background-insets: 0;
+  -fx-background-color: transparent, white, transparent, white;
 }
 
 .text-area .content {
-    -fx-background-color: transparent, white, transparent, white;
+  -fx-background-color: transparent, white, transparent, white;
 }
 
 .text-area:focused {
-    -fx-background-color: transparent, white, transparent, white;
+  -fx-background-color: transparent, white, transparent, white;
 }
-.test{
-
+.test {
   -fx-border-color: rgb(188, 188, 188);
   /*提示文字颜色*/
+}
+.table-view {
+  -fx-alignment: CENTER;
+  -fx-base: #ffffff;
+  -fx-control-inner-background: #ffffff;
+  -fx-background-color: #ffffff;
+  -fx-table-cell-border-color: transparent;
+  -fx-table-header-border-color: transparent;
+  -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+  -fx-background-color: transparent;
+}
+
+.table-view .column-header,
+.table-view .filler {
+  -fx-size: 35;
+  -fx-border-width: 0 0 1 0;
+  -fx-background-color: transparent;
+  -fx-border-color: transparent transparent derive(-fx-base, 80%) transparent;
+  -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+  -fx-font-family: "Segoe UI Light";
+  -fx-text-fill: #000000;
+  -fx-alignment: center;
+  -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+  -fx-background-color: -fx-focus-color;
 }

@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.scene.input.MouseEvent;
@@ -18,12 +19,13 @@ public class AdminMain extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("mainscreen.fxml"));
-
-//        primaryStage.initStyle(StageStyle.UNDECORATED);
-        Scene scene = new Scene(root, 900, 675);
+//        primaryStage.setTitle("Hello World");
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+        Scene scene = new Scene(root, 1000, 600);
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         screenMove(primaryStage, scene);
+        primaryStage.getIcons().add(new Image("image/logo_v3.png"));
         primaryStage.show();
     }
 

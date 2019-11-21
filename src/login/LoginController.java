@@ -1,5 +1,6 @@
 package login;
 
+import adminUI.AdminMain;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -70,7 +71,6 @@ public class LoginController implements Initializable {
                 }catch (Exception e){
                     e.printStackTrace();
                 }
-
 
             }
         });
@@ -222,20 +222,19 @@ public class LoginController implements Initializable {
                     case -2:
                         tips.setText("密码错误");
                         break;
-                    default:
-                        tips.setText("登录成功");
-
-                        UserMain user = new UserMain();
-                        try {
-                            // 更改配置文件里的ID
-                            Property.updateProperties("ID", acct.getText());
-                            user.start(new Stage());
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        Stage stage = (Stage) close.getScene().getWindow();
-                        stage.close();
+                    case 1:
+                        userLogin();
                         break;
+                    case 2:
+                        userLogin();
+                        break;
+                    case 3:
+                        adminLogin();
+                        break;
+                    case 4:
+                        adminLogin();
+                        break;
+
 
                 }
             }
@@ -276,4 +275,32 @@ public class LoginController implements Initializable {
             }
         });
     }
+
+    private void userLogin(){
+        UserMain user = new UserMain();
+        try {
+            // 更改配置文件里的ID
+            Property.updateProperties("ID", acct.getText());
+            user.start(new Stage());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Stage stage = (Stage) close.getScene().getWindow();
+        stage.close();
+        tips.setText("登录成功");
+    }
+    private void adminLogin(){
+        AdminMain a = new AdminMain();
+        try{
+            Property.updateProperties("ID", acct.getText());
+            a.start(new Stage());
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        Stage stage = (Stage) close.getScene().getWindow();
+        stage.close();
+        tips.setText("登录成功");
+    }
+
 }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane fx:id="op" prefHeight="575.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminUI.AcctManageHistoryController">
+   <children>
+      <TableView fx:id="table" layoutX="5.0" layoutY="60.0" prefHeight="500.0" prefWidth="860.0">
+         <columns>
+            <TableColumn fx:id="opid" prefWidth="166.0" text="操作ID" />
+            <TableColumn fx:id="optype" prefWidth="166.0" text="类型" />
+            <TableColumn fx:id="acctid" prefWidth="166.0" text="操作对象" />
+            <TableColumn fx:id="adminid" prefWidth="166.0" text="处理员" />
+            <TableColumn fx:id="time" prefWidth="190.0" text="处理时间" />
+         </columns>
+      </TableView>
+      <Button fx:id="search" layoutX="555.0" layoutY="16.0" mnemonicParsing="false" text="搜索" />
+      <TextField fx:id="acctText" layoutX="285.0" layoutY="16.0" prefHeight="30.0" prefWidth="120.0" promptText="操作对象ID" />
+      <TextField fx:id="adminText" layoutX="420.0" layoutY="16.0" prefWidth="120.0" promptText="处理员ID" />
+      <ChoiceBox fx:id="type" layoutX="15.0" layoutY="16.0" prefWidth="120.0" value="所有">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="所有" />
+               <String fx:value="注册账号" />
+               <String fx:value="注销账号" />
+               <String fx:value="修改密码" />
+               <String fx:value="解除异常" />
+               <String fx:value="缴费" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <TextField fx:id="opText" layoutX="150.0" layoutY="16.0" prefHeight="30.0" prefWidth="120.0" promptText="操作ID" />
+   </children>
+</AnchorPane>

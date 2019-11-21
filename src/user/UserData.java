@@ -26,7 +26,7 @@ public class UserData{
 
     public UserData(String id) throws SQLException {
         this.id = id;
-        String queryString = "select acct_name, acct_pwd, acct_state, book_own, reg_date,acct_age, role, cancel_date, acct_id, acct_sex, acct_faculty, acct_major," +
+        queryString = "select acct_name, acct_pwd, acct_state, book_own, reg_date,acct_age, role, cancel_date, acct_id, acct_sex, acct_faculty, acct_major," +
                 " acct_tel, acct_email from acct_info_table where acct_id =\"" + id + "\"";
         ResultSet rSet = ConnectDB.search(queryString);
         rSet.next();

@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HistoryController">
+
+<AnchorPane prefHeight="463.0" prefWidth="727.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HistoryController">
    <children>
-      <TableView layoutX="37.0" layoutY="27.0" prefHeight="318.0" prefWidth="376.0">
+      <TableView fx:id="historyTable" layoutX="36.0" layoutY="31.0" prefHeight="401.0" prefWidth="685.0" stylesheets="@../css/library.css">
         <columns>
-          <TableColumn prefWidth="75.0" text="书名" />
-            <TableColumn prefWidth="75.0" text="作者" />
-          <TableColumn prefWidth="75.0" text="借书日期" />
-            <TableColumn prefWidth="75.0" text="还书日期" />
+          <TableColumn fx:id="bookIDCol" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="bookNameCol" prefWidth="75.0" text="书名" />
+            <TableColumn fx:id="authorCol" prefWidth="75.0" text="作者" />
+          <TableColumn fx:id="borrowTimeCol" prefWidth="159.0" text="借书日期" />
+            <TableColumn fx:id="returnTimeCol" prefWidth="150.0" text="还书日期" />
+            <TableColumn fx:id="operateCol" prefWidth="102.0" text="操作" />
         </columns>
+         <styleClass>
+            <String fx:value="table-pane" />
+            <String fx:value="table-column" />
+            <String fx:value="default-theme" />
+         </styleClass>
       </TableView>
    </children>
 </AnchorPane>

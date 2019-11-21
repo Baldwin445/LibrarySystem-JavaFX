@@ -166,7 +166,7 @@ public class AccountManageController {
     }
 
     // 显示对话框
-    public void showAlert(Alert.AlertType type, String headerText, String content){
+    public static void showAlert(Alert.AlertType type, String headerText, String content){
         Alert show = new Alert(type);
         show.setHeaderText(headerText);
         show.setContentText(content);
