@@ -1,6 +1,8 @@
 package adminUI;
 
 import database.ConnectDB;
+import javafx.application.Platform;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -8,13 +10,17 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.util.Callback;
 import properties.Property;
 
 import java.sql.ResultSet;
@@ -39,6 +45,7 @@ public class BookManageController {
     private int imageValue = 1;
     private ObservableList<BookManageRecord> manageDate = FXCollections.observableArrayList();
     private ResultSet rSet;
+    int flag = 1;
 
     @FXML
     private void initialize(){
@@ -47,6 +54,7 @@ public class BookManageController {
         showSearchResult();                         //显示搜索结果
         buttonFocusTableContext();                  //按钮监听所选内容
         tableFocusContext();                        //表格自身监听所选内容
+//        test();
 
     }
 
@@ -220,6 +228,24 @@ public class BookManageController {
             @Override
             public void handle(ActionEvent event) {
                 deleteBook(table.getSelectionModel().getSelectedItem().getBookId());
+
+            }
+        });
+        //修改书籍信息功能
+        modify.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                if(flag == 1){
+                    setSingleBookInfoToTF();
+                    modify.setText("完成");
+                    flag++;
+                }
+                else{
+                    setBookInfoToL(table.getSelectionModel().getSelectedItem().getBookId());
+                    modify.setText("修改信息");
+                    flag--;
+                }
+
 
             }
         });
@@ -407,6 +433,165 @@ public class BookManageController {
         manageDate.remove(table.getSelectionModel().getSelectedItem());
 
         return;
+
+    }
+
+    /********修改书籍信息  单行切换为TextField************/
+    private void setSingleBookInfoToTF(){
+        cat.setCellFactory(new Callback<TableColumn<BookManageRecord, String>, TableCell<BookManageRecord, String>>() {
+
+            @Override
+            public TableCell<BookManageRecord, String> call(TableColumn<BookManageRecord, String> param) {
+
+                TableCell<BookManageRecord, String> cell = new TableCell<BookManageRecord, String>(){
+
+                    @Override
+                    protected void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+
+                        if(!empty && item != null){
+                            TextField tf = new TextField(item);
+                            Label label = new Label(item);
+
+                            HBox hbox = new HBox();
+                            hbox.setAlignment(Pos.CENTER);
+
+                            if(table.getSelectionModel().getSelectedIndex() == this.getTableRow().getIndex()){
+                                Property.writeProperties("bookCategory", item);
+                                hbox.getChildren().add(tf);
+                                tf.textProperty().addListener((observable, oldValue, newValue) -> {
+                                    Property.writeProperties("newCategory", newValue);
+                                });
+
+                                this.setGraphic(hbox);
+                            }
+                            else {
+                                hbox.getChildren().add(label);
+                                this.setGraphic(hbox);
+                            }
+
+                        }
+                    }
+                };
+
+                return cell;
+            }
+        });
+
+    }
+    /********修改书籍信息  整列切换为TextField************/
+    private void setBookInfoToTF(){
+        cat.setCellFactory(new Callback<TableColumn<BookManageRecord, String>, TableCell<BookManageRecord, String>>() {
+
+            @Override
+            public TableCell<BookManageRecord, String> call(TableColumn<BookManageRecord, String> param) {
+
+                TableCell<BookManageRecord, String> cell = new TableCell<BookManageRecord, String>(){
+                    @Override
+                    protected void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+
+                        if(!empty && item != null){
+                            TextField tf = new TextField(item);
+
+                            HBox hbox = new HBox();
+                            hbox.setAlignment(Pos.CENTER);
+                            hbox.getChildren().add(tf);
+
+                            this.setGraphic(hbox);
+
+                        }
+                    }
+                };
+
+                return cell;
+            }
+        });
+
+    }
+    /********修改书籍信息  整列切换为Label************/
+    private void setBookInfoToL(String id){
+        cat.setCellFactory(new Callback<TableColumn<BookManageRecord, String>, TableCell<BookManageRecord, String>>() {
+
+            @Override
+            public TableCell<BookManageRecord, String> call(TableColumn<BookManageRecord, String> param) {
+
+                TableCell<BookManageRecord, String> cell = new TableCell<BookManageRecord, String>(){
+                    @Override
+                    protected void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+
+                        if(!empty && item != null){
+                            Label label = new Label(item);
+
+                            HBox hbox = new HBox();
+                            hbox.setAlignment(Pos.CENTER);
+                            hbox.getChildren().add(label);
+
+
+                            if(this.getTableRow().getIndex() == table.getSelectionModel().getSelectedIndex()){
+                                String newstr = Property.getKeyValue("newCategory");
+                                if(newstr.matches("[A-Z][0-9]+")){      //符合要求进行修改
+
+                                    label.setText(newstr);                      //覆盖原label值
+                                    this.setGraphic(hbox);
+                                    table.getSelectionModel().getSelectedItem().setCategory(newstr);//覆盖原item值
+
+                                    System.out.println("符合要求，可以修改数据库！");
+                                    modifyBookInfo(id, newstr);
+                                }
+                                else{
+                                    System.out.println("不符合要求，不允许修改数据库！");
+                                    label.setText(Property.getKeyValue("bookCategory"));
+                                    this.setGraphic(hbox);
+                                }
+                                Property.updateProperties("newCategory", "");
+                                Property.updateProperties("bookCategory", "");
+                            }
+                            else this.setGraphic(hbox);
+
+
+
+                        }
+                    }
+                };
+
+                return cell;
+            }
+        });
+
+    }
+
+    private void modifyBookInfo(String id, String cat){
+        try {
+            ConnectDB.update("UPDATE book_info_table SET cat_id = '"+cat+"', category = '"+cat.charAt(0)+"'" +
+                    "WHERE book_id = '"+id+"'");
+        }catch (Exception e){
+            System.out.println("修改数据库失败！");
+
+        }
+
+        addBookManageRecord(id, "M", "修改书籍分类ID为："+ cat);
+
+    }
+
+
+    /*********添加管理记录**********/
+    private void addBookManageRecord(String id ,String type, String comment){
+        int num;
+        try{//归还记录
+            ResultSet resultSet = ConnectDB.search("select count(1) from bm_record_table");
+            resultSet.next();
+            num =  Integer.parseInt(resultSet.getString(1)) + 1;
+
+            String sql = "INSERT INTO bm_record_table VALUES " +
+                    "('"+type+num+"','"+type+"','"+id+"','"+Property.getKeyValue("acct")+"',now(),'"+comment+"')";
+            ConnectDB.update(sql);
+
+        }catch (Exception e){
+            System.out.println("添加记录失败");
+            return;
+        }
 
     }
 

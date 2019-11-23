@@ -6,11 +6,11 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.geometry.Pos;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.HBox;
+import javafx.util.Callback;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,7 +21,7 @@ public class ExceptionInfoSearch {
     private ObservableList<ExceptionInfoRecord> addData = FXCollections.observableArrayList();
 
     @FXML
-    private TableColumn id,name,adminid,info,time,duetime,money;
+    private TableColumn<ExceptionInfoRecord,String> id,name,adminid,info,time,duetime,money;
     @FXML
     private TableView table;
     @FXML
@@ -32,6 +32,7 @@ public class ExceptionInfoSearch {
     private void initialize(){
         initTable();
         searchEvent();
+        tableTooltip();
     }
 
 
@@ -97,6 +98,88 @@ public class ExceptionInfoSearch {
 
                 initTable();
 
+            }
+        });
+    }
+
+    //表格显示内容提示框
+    private void tableTooltip(){
+        info.setCellFactory(new Callback<TableColumn<ExceptionInfoRecord, String>, TableCell<ExceptionInfoRecord, String>>() {
+            @Override
+            public TableCell<ExceptionInfoRecord, String> call(TableColumn<ExceptionInfoRecord, String> param) {
+
+                TableCell<ExceptionInfoRecord, String> cell = new TableCell<ExceptionInfoRecord, String>(){
+
+                    @Override
+                    protected void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+
+                        if(empty == false && item != null){
+                            HBox h = new HBox();
+                            h.setAlignment(Pos.CENTER);
+                            Label label = new Label(item);
+                            h.getChildren().add(label);
+
+                            this.setGraphic(h);
+
+                            this.setTooltip(new Tooltip(item));
+                        }
+                    }
+                };
+
+                return cell;
+            }
+        });
+        time.setCellFactory(new Callback<TableColumn<ExceptionInfoRecord, String>, TableCell<ExceptionInfoRecord, String>>() {
+            @Override
+            public TableCell<ExceptionInfoRecord, String> call(TableColumn<ExceptionInfoRecord, String> param) {
+
+                TableCell<ExceptionInfoRecord, String> cell = new TableCell<ExceptionInfoRecord, String>(){
+
+                    @Override
+                    protected void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+
+                        if(empty == false && item != null){
+                            HBox h = new HBox();
+                            h.setAlignment(Pos.CENTER);
+                            Label label = new Label(item);
+                            h.getChildren().add(label);
+
+                            this.setGraphic(h);
+
+                            this.setTooltip(new Tooltip(item));
+                        }
+                    }
+                };
+
+                return cell;
+            }
+        });
+        duetime.setCellFactory(new Callback<TableColumn<ExceptionInfoRecord, String>, TableCell<ExceptionInfoRecord, String>>() {
+            @Override
+            public TableCell<ExceptionInfoRecord, String> call(TableColumn<ExceptionInfoRecord, String> param) {
+
+                TableCell<ExceptionInfoRecord, String> cell = new TableCell<ExceptionInfoRecord, String>(){
+
+                    @Override
+                    protected void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+
+                        if(empty == false && item != null){
+                            HBox h = new HBox();
+                            h.setAlignment(Pos.CENTER);
+                            Label label = new Label(item);
+                            h.getChildren().add(label);
+
+                            this.setGraphic(h);
+
+                            this.setTooltip(new Tooltip(item));
+                        }
+                    }
+                };
+
+                return cell;
             }
         });
     }
