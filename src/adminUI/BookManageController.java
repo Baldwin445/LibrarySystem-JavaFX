@@ -46,15 +46,19 @@ public class BookManageController {
     private ObservableList<BookManageRecord> manageDate = FXCollections.observableArrayList();
     private ResultSet rSet;
     int flag = 1;
+    private String sql = "SELECT book_id, book_name, cat_id, publisher, author, isbn," +
+            "publish_year,book_state FROM book_info_table";;
 
     @FXML
     private void initialize(){
+        //设置初始状态
+        pane2.setVisible(false);
+
         initTable();                                //初始化表格
         switchSearch();                             //切换搜索模式
         showSearchResult();                         //显示搜索结果
         buttonFocusTableContext();                  //按钮监听所选内容
         tableFocusContext();                        //表格自身监听所选内容
-//        test();
 
     }
 
@@ -85,7 +89,7 @@ public class BookManageController {
         });
     }
 
-    //搜索显示结果
+    /*****搜索显示结果******/
     private void showSearchResult() {
         search1.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -94,12 +98,16 @@ public class BookManageController {
 
             }
         });
+        search2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                searchAllInfo();
+            }
+        });
     }
 
     //不带参数初始化所有书籍数据
     private void initTable(){
-        //设置初始状态
-        pane2.setVisible(false);
         //设置每列属性
         id.setCellValueFactory(new PropertyValueFactory<>("bookId"));
         name.setCellValueFactory(new PropertyValueFactory<>("bookName"));
@@ -109,11 +117,7 @@ public class BookManageController {
         isbn.setCellValueFactory(new PropertyValueFactory<>("isbn"));
         year.setCellValueFactory(new PropertyValueFactory<>("year"));
         state.setCellValueFactory(new PropertyValueFactory<>("state"));
-        //设置表格属性
-        table.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
 
-        String sql = "SELECT book_id, book_name, cat_id, publisher, author, isbn," +
-                "publish_year,book_state FROM book_info_table";
         rSet = ConnectDB.search(sql);
         manageDate.clear();
         try{
@@ -148,7 +152,7 @@ public class BookManageController {
 
     /****初始化查询书籍关键字****/
     private void initTable(String bookName){
-        String sql = "SELECT book_id,book_name,cat_id,publisher,author,isbn," +
+        sql = "SELECT book_id,book_name,cat_id,publisher,author,isbn," +
                 "publish_year,book_state " +
                 "FROM book_info_table " +
                 "WHERE (book_name LIKE '%" + bookName + "%') " +
@@ -158,7 +162,7 @@ public class BookManageController {
         manageDate.clear();
         try{
             while (rSet.next()){
-                String stateCN = new String();
+                String stateCN = "";
                 System.out.println(rSet.getString(1));
                 if(rSet.getString(8).equals("N")){
                     stateCN = "正常";
@@ -562,6 +566,7 @@ public class BookManageController {
 
     }
 
+    /****************数据库修改书籍信息*****************/
     private void modifyBookInfo(String id, String cat){
         try {
             ConnectDB.update("UPDATE book_info_table SET cat_id = '"+cat+"', category = '"+cat.charAt(0)+"'" +
@@ -574,7 +579,6 @@ public class BookManageController {
         addBookManageRecord(id, "M", "修改书籍分类ID为："+ cat);
 
     }
-
 
     /*********添加管理记录**********/
     private void addBookManageRecord(String id ,String type, String comment){
@@ -592,6 +596,63 @@ public class BookManageController {
             System.out.println("添加记录失败");
             return;
         }
+
+    }
+
+    /*********综合搜索*********/
+    private void searchAllInfo(){
+        String name, id, publisher, author, isbn, year;
+        sql = "SELECT book_id,book_name,cat_id,publisher,author,isbn," +
+                "publish_year,book_state FROM book_info_table ";
+        String namesql, idsql, publishersql, authorsql, isbnsql, yearsql;
+        name = nameText.getText();
+        id = idText.getText();
+        publisher = publisherText.getText();
+        author = authorText.getText();
+        isbn = isbnText.getText();
+        year = yearText.getText();
+
+        namesql = " AND ((book_name LIKE '%" + name +
+                "%') OR (book_name LIKE '%" + name +
+                "') OR (book_name LIKE '" + name +
+                "%'))";
+        idsql = " AND ((book_id LIKE '%" + id +
+                "%') OR (book_id LIKE '%" + id +
+                "') OR (book_id LIKE '" + id +
+                "%'))";
+        publishersql = " AND ((publisher LIKE '%" + publisher +
+                "%') OR (publisher LIKE '%" + publisher +
+                "') OR (publisher LIKE '" + publisher +
+                "%'))";
+        authorsql = " AND ((author LIKE '%" + author +
+                "%') OR (author LIKE '%" + author +
+                "') OR (author LIKE '" + author +
+                "%'))";
+        isbnsql = " AND ((isbn LIKE '%" + isbn +
+                "%') OR (isbn LIKE '%" + isbn +
+                "') OR (isbn LIKE '" + isbn +
+                "%'))";
+        yearsql = " AND ((publish_year LIKE '%" + year +
+                "%') OR (publish_year LIKE '%" + year +
+                "') OR (publish_year LIKE '" + year +
+                "%'))";
+
+        if(!name.equals("")||!id.equals("")||!publisher.equals("")
+                ||!author.equals("")||!isbn.equals("")||!year.equals(""))
+            sql += "WHERE book_id = book_id ";
+        if(!name.equals("")) sql += namesql;
+        if(!id.equals("")) sql += idsql;
+        if(!publisher.equals("")) sql += publishersql;
+        if(!author.equals("")) sql += authorsql;
+        if(!isbn.equals("")) sql += isbnsql;
+        if(!year.equals("")) sql += yearsql;
+
+
+        initTable();
+
+
+
+
 
     }
 
