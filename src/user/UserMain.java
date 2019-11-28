@@ -20,7 +20,7 @@ public class UserMain extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        Scene scene = new Scene(root, 890, 550);
+        Scene scene = new Scene(root, 1000, 600);
         primaryStage.getIcons().add(new Image("/image/logo_v3.png"));
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);

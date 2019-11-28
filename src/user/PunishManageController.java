@@ -47,6 +47,7 @@ public class PunishManageController {
         rmbCol.setCellValueFactory(new PropertyValueFactory<>("rmb"));
 
         operateCol.setCellFactory((col) -> {
+<<<<<<< HEAD
             TableCell<Punishment, String> cell = new TableCell(){
                 Button button = new Button("处理");
                 @Override
@@ -60,6 +61,21 @@ public class PunishManageController {
                         }
                         else {
                             button.setOnMouseClicked((m) -> {
+=======
+            TableCell<Punishment, String> cell = new TableCell<>(){
+                Button renewButton = new Button("处理");
+                @Override
+                protected void updateItem(String item, boolean empty) {
+                    super.updateItem(item, empty);
+                    renewButton.getStyleClass().add("green-theme");
+                    if (!empty) {
+                        Punishment punishment = getTableView().getItems().get(getIndex());
+                        if (punishment.getRmb() == 0){
+                            renewButton.setText("已处理");
+                        }
+                        else {
+                            renewButton.setOnMouseClicked((m) -> {
+>>>>>>> jinl
                                 System.out.println("Button test");
                                 try {
                                     OperatePunish(punishment);
@@ -70,7 +86,11 @@ public class PunishManageController {
 
                         }
                         setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
+<<<<<<< HEAD
                         setGraphic(button);
+=======
+                        setGraphic(renewButton);
+>>>>>>> jinl
                     } else {
                         setGraphic(null);
                     }
@@ -83,7 +103,11 @@ public class PunishManageController {
     }
 
     public void OperatePunish(Punishment punishment) throws SQLException {
+<<<<<<< HEAD
         Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION, "确定处理？");
+=======
+        Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION, "确定续借？");
+>>>>>>> jinl
         confirmation.setHeaderText("续借");
         Optional<ButtonType> result = confirmation.showAndWait();
         if (result.get() == ButtonType.CANCEL){

@@ -165,9 +165,9 @@ public class UserData{
 //        VALUES = String.format(VALUES, name, id, password, state, bookOwn, regDate, cancelDate, role, sex,
 //                age, faculty, major, tel, email);
         String query = "UPDATE `library`.`acct_info_table` SET `acct_name` = '%s', `acct_pwd` = '%s', `acct_state` = '%s', " +
-                "`book_own` = %d, `reg_date` = '%s', `cancel_date` = '%s', `role` = '%s' , `acct_sex` = '%s', `acct_age` = %d, " +
-                "`acct_faculty` = '%s', `acct_major` = '%s', `acct_tel` = '%s', `acct_email` = '%s' WHERE `acct_id` = '%s'";
-        query = String.format(query, name, password, state, bookOwn, regDate, cancelDate, role, sex, age, faculty, major, tel, email, id);
+                "`book_own` = %d, `acct_sex` = '%s', `acct_age` = %d, " +
+                "`acct_tel` = '%s', `acct_email` = '%s' WHERE `acct_id` = '%s'";
+        query = String.format(query, name, password, state, bookOwn,  sex, age, tel, email, id);
         try {
             stmt.executeUpdate(query);
         } catch (SQLException e) {

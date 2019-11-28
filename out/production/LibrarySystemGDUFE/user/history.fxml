@@ -3,17 +3,31 @@
 <?import java.lang.String?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<<<<<<< HEAD
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="463.0" prefWidth="727.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HistoryController">
    <children>
       <TableView fx:id="historyTable" layoutX="36.0" layoutY="31.0" prefHeight="401.0" prefWidth="685.0" stylesheets="@../css/library.css">
+=======
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="732.0" prefWidth="787.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HistoryController">
+   <children>
+      <TableView fx:id="historyTable" layoutX="20.0" layoutY="14.0" prefHeight="401.0" prefWidth="711.0" stylesheets="@../css/library.css">
+>>>>>>> jinl
         <columns>
           <TableColumn fx:id="bookIDCol" prefWidth="75.0" text="ID" />
             <TableColumn fx:id="bookNameCol" prefWidth="75.0" text="书名" />
             <TableColumn fx:id="authorCol" prefWidth="75.0" text="作者" />
           <TableColumn fx:id="borrowTimeCol" prefWidth="159.0" text="借书日期" />
             <TableColumn fx:id="returnTimeCol" prefWidth="150.0" text="还书日期" />
+<<<<<<< HEAD
+=======
+            <TableColumn fx:id="historyState" prefWidth="75.0" text="状态" />
+>>>>>>> jinl
             <TableColumn fx:id="operateCol" prefWidth="102.0" text="操作" />
         </columns>
          <styleClass>
@@ -22,5 +36,10 @@
             <String fx:value="default-theme" />
          </styleClass>
       </TableView>
+      <ImageView fx:id="refresh" fitHeight="26.0" fitWidth="15.0" layoutX="749.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/refresh_icon.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

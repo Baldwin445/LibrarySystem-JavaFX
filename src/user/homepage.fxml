@@ -5,9 +5,10 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
-<AnchorPane prefHeight="428.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HomepageController">
+
+<AnchorPane prefHeight="579.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HomepageController">
    <children>
-      <ImageView fitHeight="500.0" fitWidth="776.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="579.0" fitWidth="886.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/library_sanshui.jpg" />
          </image>

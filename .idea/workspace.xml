@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="04a088db-86fb-416d-b1c0-acc1cd26a5ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data.properties" afterDir="false" />
+=======
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="完成预约信息的功能">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/homepage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/punish_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/punish_manage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/PunishManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/PunishManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/UserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/homepage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/punish_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/punish_manage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/search.fxml" afterDir="false" />
+>>>>>>> jinl
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,6 +49,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
@@ -52,6 +73,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> jinl
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -62,6 +85,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
       <find>item</find>
       <find>停止</find>
       <find>P</find>
@@ -92,11 +116,31 @@
       <find>index</find>
       <find>search2</find>
       <find>sql</find>
+=======
+      <find>min</find>
+      <find>root</find>
+      <find>close</find>
+      <find>id</find>
+      <find>id=</find>
+      <find>fx:fx</find>
+      <find>setX</find>
+      <find>scene</find>
+      <find>login</find>
+      <find>field</find>
+      <find>acct</find>
+      <find>登录</find>
+      <find>test</find>
+      <find>登录失败</find>
+      <find>LoginData</find>
+      <find>loginAccess</find>
+      <find>text</find>
+>>>>>>> jinl
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -151,6 +195,12 @@
       <expand />
       <select />
     </treeState>
+=======
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectId" id="1TKtjltakk9aljVGrYSGbbd1GwF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+>>>>>>> jinl
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="231" />
@@ -158,6 +208,7 @@
     <option name="width" value="1935" />
     <option name="height" value="1095" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -203,10 +254,13 @@
       <pane id="Scope" />
     </panes>
   </component>
+=======
+>>>>>>> jinl
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Student" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -215,6 +269,34 @@
     <option name="myCommands">
       <command value="super.updateItem(item, empty);" />
     </option>
+=======
+    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/css" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="login" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea\LibrarySystemGDUFE\src\css" />
+      <recent name="D:\idea\LibrarySystemGDUFE\src" />
+      <recent name="D:\idea\LibrarySystemGDUFE" />
+      <recent name="D:\idea\LibrarySystemGDUFE\src\image" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="operate" />
+      <recent name="properties" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Project\LibrarySystemGDUFE\src\image" />
+    </key>
+>>>>>>> jinl
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -228,6 +310,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.AdminMain">
     <configuration name="AdminMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="adminUI.AdminMain" />
@@ -238,11 +321,32 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+=======
+  <component name="RunManager" selected="Application.Main">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+>>>>>>> jinl
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="Main" type="Application" factoryName="Application">
+>>>>>>> jinl
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="LibrarySystemGDUFE" />
       <extension name="coverage">
@@ -261,6 +365,8 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="user.*" />
+<<<<<<< HEAD
+=======
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -268,6 +374,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.test" />
+      <module name="LibrarySystemGDUFE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+>>>>>>> jinl
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
     <list>
       <item itemvalue="Application.AdminMain" />
       <item itemvalue="Application.Main" />
@@ -278,6 +406,43 @@
         <item itemvalue="Application.AdminMain" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.UserMain" />
+=======
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserMain" />
+        <item itemvalue="Application.test" />
+>>>>>>> jinl
       </list>
     </recent_temporary>
   </component>
@@ -290,6 +455,7 @@
       <created>1573550672461</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1573550672461</updated>
       <workItem from="1573550673701" duration="2216000" />
       <workItem from="1573556011507" duration="9972000" />
@@ -315,10 +481,42 @@
       <workItem from="1574514237585" duration="3642000" />
       <workItem from="1574693565333" duration="1760000" />
       <workItem from="1574868135938" duration="115000" />
+=======
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1571404822830" duration="56000" />
+      <workItem from="1571404943753" duration="2690000" />
+      <workItem from="1571544310195" duration="280000" />
+      <workItem from="1571649880768" duration="547000" />
+      <workItem from="1571650526011" duration="6313000" />
+      <workItem from="1571706192168" duration="640000" />
+      <workItem from="1571734508111" duration="14988000" />
+      <workItem from="1571879958861" duration="6637000" />
+      <workItem from="1571887246012" duration="2311000" />
+      <workItem from="1571912888481" duration="15467000" />
+      <workItem from="1571968881550" duration="7682000" />
+      <workItem from="1572059609883" duration="165000" />
+      <workItem from="1572267332802" duration="3690000" />
+      <workItem from="1572308191229" duration="3758000" />
+      <workItem from="1572323097876" duration="3131000" />
+      <workItem from="1572696042163" duration="6807000" />
+      <workItem from="1572711154452" duration="9400000" />
+      <workItem from="1572865737227" duration="16476000" />
+      <workItem from="1572962357356" duration="1967000" />
+>>>>>>> jinl
     </task>
+    <task id="LOCAL-00001" summary="完成预约信息的功能">
+      <created>1573636408623</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573636408623</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="229845000" />
   </component>
   <component name="TodoView">
@@ -410,12 +608,20 @@
       </list>
     </option>
   </component>
+=======
+    <option name="totallyTimeSpent" value="104307000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+>>>>>>> jinl
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
             <State>
+<<<<<<< HEAD
               <option name="RECENTLY_FILTERED_USER_GROUPS">
                 <collection />
               </option>
@@ -430,11 +636,15 @@
                   <option value="3" />
                 </list>
               </option>
+=======
+              <option name="COLUMN_ORDER" />
+>>>>>>> jinl
             </State>
           </value>
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -452,11 +662,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LIMIT_HISTORY" value="false" />
+=======
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="完成预约信息的功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成预约信息的功能" />
+>>>>>>> jinl
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/user/AccountManageController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -978,5 +1200,83 @@
         </state>
       </provider>
     </entry>
+=======
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LibrarySystemGDUFE$Main.ic" NAME="Main Coverage Results" MODIFIED="1571979224029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sample.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+>>>>>>> jinl
   </component>
 </project>

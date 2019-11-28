@@ -14,7 +14,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import properties.Property;
 
+<<<<<<< HEAD
 import javax.xml.soap.Text;
+=======
+//import javax.xml.soap.Text;
+>>>>>>> jinl
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -1,10 +1,13 @@
 package user;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import operate.UIOperate;
 import properties.Property;
 
@@ -20,11 +23,19 @@ public class InformationController {
     @FXML
     private TextField name, ID, sex, faculty, major, tel, mail, cancelDate, registerDate, state, age;
 
+    @FXML
+    private ImageView refresh;
+
     public InformationController() throws SQLException {
     }
 
     @FXML
     private void initialize() {
+        initLabel();
+        onRefresh();
+    }
+
+    private void initLabel(){
         // 设置控件的数据
         name.setText(user.getName());
         ID.setText(userID);
@@ -75,19 +86,26 @@ public class InformationController {
 
     // 检查输入
     public boolean checkInput(){
-        String problemText = "";
-        if (name.getText().length() == 0) problemText += "姓名区不能为空！\n";
-        if (name.getText().length() > 20) problemText += "姓名过长\n";
-        if (age.getText().length() == 0) problemText += "年龄不能为空\n";
-        else if (!RecommendController.isNumber(age.getText())) problemText += "年龄必须为数字\n";
-        else if (Integer.parseInt(age.getText()) > 100 || Integer.parseInt(age.getText()) < 0) problemText += "年龄必须为0~100\n";
-        if (!sex.getText().equals("男")&&!sex.getText().equals("女")) problemText += "性别只能为男或者女\n";
-        if (tel.getText().length() != 11) problemText += "电话只能为11位数字\n";
-        if (mail.getText().length() == 0) problemText += "邮箱不能为空\n";
-        if (problemText.equals("")){
-            return true;
+        try {
+
+            String problemText = "";
+            if (name.getText().length() == 0) problemText += "姓名区不能为空！\n";
+            if (name.getText().length() > 20) problemText += "姓名过长\n";
+            if (age.getText().length() == 0) problemText += "年龄不能为空\n";
+            else if (!RecommendController.isNumber(age.getText())) problemText += "年龄必须为数字\n";
+            else if (Integer.parseInt(age.getText()) > 100 || Integer.parseInt(age.getText()) < 0) problemText += "年龄必须为0~100\n";
+            if (!sex.getText().equals("男")&&!sex.getText().equals("女")) problemText += "性别只能为男或者女\n";
+            if (tel.getText().length() != 11) problemText += "电话只能为11位数字\n";
+            if (mail.getText().length() == 0) problemText += "邮箱不能为空\n";
+            if (problemText.equals("")){
+                return true;
+            }
+            UIOperate.showAlert(Alert.AlertType.ERROR, "输入有错", problemText);
         }
-        UIOperate.showAlert(Alert.AlertType.ERROR, "输入有错", problemText);
+        catch (Exception e){
+           initialize();
+        }
+
         return false;
     }
 
@@ -117,5 +135,15 @@ public class InformationController {
         }
 
 
+    }
+
+
+    private void onRefresh(){
+        refresh.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                initLabel();
+            }
+        });
     }
 }
