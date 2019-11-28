@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="完成预约信息的功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/RequestBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/RequestBookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/request_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/request_book.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/homepage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/punish_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/punish_manage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/search.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/HistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/RequestBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/RequestBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/request_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/request_book.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/PunishManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/PunishManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/UserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/homepage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/punish_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/punish_manage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/search.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,12 +107,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="90" />
-    <option name="y" value="-25" />
-    <option name="width" value="1615" />
-    <option name="height" value="880" />
-  </component>
   <component name="ProjectId" id="1TKtjltakk9aljVGrYSGbbd1GwF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -134,6 +135,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -166,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserMain">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -221,6 +223,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.test" />
+      <module name="LibrarySystemGDUFE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -255,6 +271,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserMain" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -289,6 +306,14 @@
       <workItem from="1572865737227" duration="16476000" />
       <workItem from="1572962357356" duration="1967000" />
     </task>
+    <task id="LOCAL-00001" summary="完成预约信息的功能">
+      <created>1573636408623</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573636408623</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -316,6 +341,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="完成预约信息的功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成预约信息的功能" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

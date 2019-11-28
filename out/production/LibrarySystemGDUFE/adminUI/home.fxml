@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="579.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminUI.home">
+   <children>
+      <ImageView fitHeight="579.0" fitWidth="870.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/广财.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="124.0" layoutY="46.0" text="欢迎进入广东财经大学图书管理系统" />
+   </children>
+</AnchorPane>

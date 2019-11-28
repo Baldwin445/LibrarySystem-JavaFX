@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import java.lang.String?>
+
+<AnchorPane prefHeight="575.0" prefWidth="875.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminUI.BookAddController" fx:id="xzgrts">
+   <children>
+      <TableView fx:id="table" layoutX="6.0" layoutY="52.0" prefHeight="455.0" prefWidth="860.0" stylesheets="@../css/library.css">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="88.0" text="名称" />
+          <TableColumn fx:id="isbn" prefWidth="85.0" text="ISBN" />
+            <TableColumn fx:id="publisher" prefWidth="100.0" text="出版社" />
+            <TableColumn fx:id="author" prefWidth="75.0" text="作者" />
+            <TableColumn fx:id="year" prefWidth="79.0" text="出版年份" />
+            <TableColumn fx:id="lang" prefWidth="75.0" text="语言" />
+            <TableColumn fx:id="reason" editable="false" prefWidth="360.0" text="荐购原因" />
+        </columns>
+          <styleClass>
+              <String fx:value="table-pane" />
+              <String fx:value="table-column" />
+              <String fx:value="default-theme" />
+          </styleClass>
+      </TableView>
+      <Button fx:id="getInfo" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="获取采购计划及荐购信息" />
+      <Button fx:id="pass" layoutX="632.0" layoutY="517.0" mnemonicParsing="false" text="通过" />
+      <Button fx:id="nopass" layoutX="722.0" layoutY="517.0" mnemonicParsing="false" text="不通过" />
+
+   </children>
+</AnchorPane>

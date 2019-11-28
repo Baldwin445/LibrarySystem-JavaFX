@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane fx:id="sjjhls" prefHeight="575.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminUI.BookManageHistoryController">
+   <children>
+      <TableView fx:id="table" layoutX="8.0" layoutY="61.0" prefHeight="500.0" prefWidth="855.0">
+         <columns>
+            <TableColumn fx:id="op" prefWidth="120.0" text="操作ID" />
+            <TableColumn fx:id="optype" prefWidth="120.0" text="类型" />
+            <TableColumn fx:id="bookID" minWidth="0.0" prefWidth="120.0" text="书籍ID" />
+            <TableColumn fx:id="adminID" prefWidth="120.0" text="处理员ID" />
+            <TableColumn fx:id="time" prefWidth="160.0" text="操作时间" />
+            <TableColumn fx:id="notes" prefWidth="215.0" text="备注" />
+         </columns>
+      </TableView>
+      <Button fx:id="search" layoutX="555.0" layoutY="16.0" mnemonicParsing="false" text="搜索" />
+      <TextField fx:id="bookText" layoutX="285.0" layoutY="16.0" prefHeight="30.0" prefWidth="120.0" promptText="书籍ID" />
+      <TextField fx:id="adminText" layoutX="420.0" layoutY="16.0" prefWidth="120.0" promptText="管理员ID" />
+      <ChoiceBox fx:id="type" layoutX="15.0" layoutY="16.0" prefWidth="120.0" value="所有">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="所有" />
+               <String fx:value="书籍入库" />
+               <String fx:value="删除书籍" />
+               <String fx:value="修改信息" />
+               <String fx:value="暂停/恢复借阅" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <TextField fx:id="opText" layoutX="150.0" layoutY="16.0" prefHeight="30.0" prefWidth="120.0" promptText="操作ID" />
+   </children>
+</AnchorPane>
