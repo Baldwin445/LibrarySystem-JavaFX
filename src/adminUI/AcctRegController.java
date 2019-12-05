@@ -13,11 +13,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import login.Register;
-<<<<<<< HEAD
 import org.omg.PortableInterceptor.INACTIVE;
-=======
 //import org.omg.PortableInterceptor.INACTIVE;
->>>>>>> jinl
 import properties.Property;
 
 import java.sql.ResultSet;

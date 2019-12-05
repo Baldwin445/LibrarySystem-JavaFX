@@ -67,6 +67,7 @@
                 <fx:include fx:id="brHistory" source="bookbrhistory.fxml" visible="false" />
                 <fx:include fx:id="zhglls" source="acctmanagehistory.fxml" visible="false" />
                 <fx:include fx:id="ycxxcx" source="exceptioninfosearch.fxml" visible="false" />
+                <fx:include fx:id="exit" source="exit.fxml" visible="false" />
             </children>
             <opaqueInsets>
                 <Insets />

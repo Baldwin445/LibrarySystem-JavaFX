@@ -1,29 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="04a088db-86fb-416d-b1c0-acc1cd26a5ca" name="Default Changelist" comment="">
+    <list default="true" id="a21b8ebf-45d9-4b8e-8c0d-67c4582cba53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/adminUI/ExitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data.properties" afterDir="false" />
-=======
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="完成预约信息的功能">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/META-INF/LibrarySystemGDUFE.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctMHistoryRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctMHistoryRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageHistoryController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageHistoryController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageHistoryController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageHistoryController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageHistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctManageRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AcctRegController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AddRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AddRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMain$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMain$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMain$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/AdminMainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookAddController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookAddController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookAddController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookAddController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookAddController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookAddController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookAddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookAddController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookBRHistoryController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookBRHistoryController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookBRHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookBRHistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookBRHistroyRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookBRHistroyRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookMHistoryRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookMHistoryRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$10$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$10$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$11$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$11$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$12$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$12$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageHistoryController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageHistoryController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageHistoryController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageHistoryController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageHistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/BookManageRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/ExceptionInfoSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/adminUI/home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/database/ConnectDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/database/ConnectDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwd$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwd$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwd$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwd$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/ForgetPwdController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginController$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/LoginData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/Register$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/Register$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/Register$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/login/Register$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/properties/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/properties/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/properties/RegProperty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/properties/RegProperty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/Person1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/TestController1$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/TestController1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/TestController1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/TestMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/test.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/sample/test1.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/BookManageRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/BookManageRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/BorrowRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/BorrowRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/HistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/InformationController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/InformationController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/InformationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/InformationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/PunishManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/Punishment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/Punishment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/RequestBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/RequestBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/UserMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/homepage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/punish_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/punish_manage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LibrarySystemGDUFE/user/history.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adminUI/AcctRegController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/AcctRegController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adminUI/AdminMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/AdminMainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adminUI/acctmanage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/acctmanage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adminUI/bookmanage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/bookmanage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adminUI/mainscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/adminUI/mainscreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/library.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/library.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/HistoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/PunishManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/PunishManageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/UserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/homepage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/punish_manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/punish_manage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/search.fxml" afterDir="false" />
->>>>>>> jinl
+      <change beforePath="$PROJECT_DIR$/src/user/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/history.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,31 +185,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/adminUI/BookManageController.java">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/adminUI/acctmanage.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="644" column="31" selection-start-line="644" selection-start-column="31" selection-end-line="644" selection-end-column="31" />
+            <state relative-caret-position="106">
+              <caret line="34" column="84" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/user/information.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-19">
+              <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/user/PunishManageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="86" column="38" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -65,151 +223,109 @@
         <entry file="file://$PROJECT_DIR$/src/adminUI/bookmanage.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/adminUI/exit.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/user/exit.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/user/InformationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="54" column="9" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="54" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/user/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/user/UserData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-419">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/library.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="93" column="11" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-=======
->>>>>>> jinl
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-<<<<<<< HEAD
-      <find>item</find>
-      <find>停止</find>
-      <find>P</find>
-      <find>P&quot;</find>
-      <find>'S'</find>
-      <find>S&quot;</find>
-      <find>已借出</find>
-      <find>已借</find>
-      <find>select count(1)</find>
-      <find>key.getText()</find>
-      <find>Thread</find>
-      <find>v</find>
-      <find>runable</find>
-      <find>ADD</find>
-      <find>dateadd</find>
-      <find>add</find>
-      <find>date</find>
-      <find>table.getSelectionModel().getSelectedItem().set</find>
-      <find>delete</find>
-      <find>注销</find>
-      <find>set</find>
-      <find>HB</find>
-      <find>edit</find>
-      <find>editable</find>
-      <find>runabl</find>
-      <find>start</find>
-      <find>bookCatego</find>
-      <find>index</find>
-      <find>search2</find>
-      <find>sql</find>
-=======
-      <find>min</find>
-      <find>root</find>
-      <find>close</find>
-      <find>id</find>
-      <find>id=</find>
-      <find>fx:fx</find>
-      <find>setX</find>
-      <find>scene</find>
-      <find>login</find>
-      <find>field</find>
-      <find>acct</find>
-      <find>登录</find>
-      <find>test</find>
-      <find>登录失败</find>
-      <find>LoginData</find>
-      <find>loginAccess</find>
-      <find>text</find>
->>>>>>> jinl
+      <find>cell</find>
+      <find>tcbutton</find>
+      <find>tc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/login/register_layout.fxml" />
-        <option value="$PROJECT_DIR$/src/user/Admin.java" />
-        <option value="$PROJECT_DIR$/src/login/Register.java" />
-        <option value="$PROJECT_DIR$/src/login/forgetpwd_layout.fxml" />
-        <option value="$PROJECT_DIR$/src/login/RegisterController.java" />
-        <option value="$PROJECT_DIR$/src/login/ForgetPwd.java" />
-        <option value="$PROJECT_DIR$/src/login/ForgetPwdController.java" />
-        <option value="$PROJECT_DIR$/src/login/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/MainController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/home.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/BookAdd.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/AdminMain.java" />
-        <option value="$PROJECT_DIR$/src/user/PunishManageController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/AddRecord.java" />
-        <option value="$PROJECT_DIR$/src/user/HistoryController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/bookadd.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/BookManage.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/ManageRecord.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/bookmanage.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/BookAddController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/acctreg.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/BookManageRecord.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/mainscreen.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/bookmanagehistory.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/BookMHistoryRecord.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/AcctMHistoryRecord.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/acctmanagehistory.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/exceptioninfosearch.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/ExceptionInfoRecord.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/BookBRHistroyRecord.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/bookbrhistory.fxml" />
-        <option value="$PROJECT_DIR$/src/adminUI/AdminMainController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/BookBRHistoryController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/BookManageHistoryController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/AcctManageRecord.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/acctmanage.fxml" />
         <option value="$PROJECT_DIR$/src/adminUI/AcctRegController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/AcctManageHistoryController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/AcctManageController.java" />
-        <option value="$PROJECT_DIR$/src/adminUI/ExceptionInfoSearch.java" />
+        <option value="$PROJECT_DIR$/src/user/PunishManageController.java" />
+        <option value="$PROJECT_DIR$/src/user/HistoryController.java" />
+        <option value="$PROJECT_DIR$/src/user/UserData.java" />
+        <option value="$PROJECT_DIR$/src/user/SearchController.java" />
         <option value="$PROJECT_DIR$/data.properties" />
-        <option value="$PROJECT_DIR$/src/adminUI/BookManageController.java" />
+        <option value="$PROJECT_DIR$/src/user/history.fxml" />
+        <option value="$PROJECT_DIR$/src/adminUI/ExitController.java" />
+        <option value="$PROJECT_DIR$/src/adminUI/mainscreen.fxml" />
+        <option value="$PROJECT_DIR$/src/adminUI/AdminMainController.java" />
+        <option value="$PROJECT_DIR$/src/css/library.css" />
+        <option value="$PROJECT_DIR$/src/adminUI/bookmanage.fxml" />
+        <option value="$PROJECT_DIR$/src/adminUI/acctmanage.fxml" />
+        <option value="$PROJECT_DIR$/src/adminUI/exit.fxml" />
       </list>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-=======
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectId" id="1TKtjltakk9aljVGrYSGbbd1GwF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
->>>>>>> jinl
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="231" />
-    <option name="y" value="302" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-225" />
+    <option name="y" value="91" />
     <option name="width" value="1935" />
     <option name="height" value="1095" />
   </component>
-<<<<<<< HEAD
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -225,78 +341,55 @@
             <path>
               <item name="LibrarySystemGDUFE" type="b2602c69:ProjectViewProjectNode" />
               <item name="LibrarySystemGDUFE" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LibrarySystemGDUFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LibrarySystemGDUFE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LibrarySystemGDUFE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="LibrarySystemGDUFE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="adminUI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LibrarySystemGDUFE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="LibrarySystemGDUFE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LibrarySystemGDUFE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="LibrarySystemGDUFE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="LibrarySystemGDUFE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
-=======
->>>>>>> jinl
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Student" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="super.updateItem(item, empty);" />
-    </option>
-=======
-    <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/adminUI" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="login" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="adminUI" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\idea\LibrarySystemGDUFE\src\css" />
-      <recent name="D:\idea\LibrarySystemGDUFE\src" />
-      <recent name="D:\idea\LibrarySystemGDUFE" />
-      <recent name="D:\idea\LibrarySystemGDUFE\src\image" />
+      <recent name="E:\Project\LibrarySystemGDUFE\src\adminUI" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="operate" />
-      <recent name="properties" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Project\LibrarySystemGDUFE\src\image" />
-    </key>
->>>>>>> jinl
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -310,8 +403,7 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Application.AdminMain">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="AdminMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="adminUI.AdminMain" />
       <module name="LibrarySystemGDUFE" />
@@ -321,32 +413,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-=======
-  <component name="RunManager" selected="Application.Main">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
-      <Host>localhost</Host>
-      <Port>5050</Port>
-    </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
->>>>>>> jinl
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="Main" type="Application" factoryName="Application">
->>>>>>> jinl
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="LibrarySystemGDUFE" />
       <extension name="coverage">
@@ -365,8 +436,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="user.*" />
-<<<<<<< HEAD
-=======
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -374,75 +443,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sample.test" />
-      <module name="LibrarySystemGDUFE" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sample.*" />
->>>>>>> jinl
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <list>
-      <item itemvalue="Application.AdminMain" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.UserMain" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AdminMain" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AdminMain" />
         <item itemvalue="Application.UserMain" />
-=======
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.UserMain" />
-        <item itemvalue="Application.test" />
->>>>>>> jinl
       </list>
     </recent_temporary>
   </component>
@@ -451,87 +456,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="04a088db-86fb-416d-b1c0-acc1cd26a5ca" name="Default Changelist" comment="" />
-      <created>1573550672461</created>
+      <changelist id="a21b8ebf-45d9-4b8e-8c0d-67c4582cba53" name="Default Changelist" comment="" />
+      <created>1574908562712</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1573550672461</updated>
-      <workItem from="1573550673701" duration="2216000" />
-      <workItem from="1573556011507" duration="9972000" />
-      <workItem from="1573609825535" duration="13420000" />
-      <workItem from="1573643683371" duration="1567000" />
-      <workItem from="1573646502765" duration="9458000" />
-      <workItem from="1573697132360" duration="4492000" />
-      <workItem from="1573720369266" duration="2261000" />
-      <workItem from="1573890028240" duration="1458000" />
-      <workItem from="1573894228231" duration="18501000" />
-      <workItem from="1573973825978" duration="24532000" />
-      <workItem from="1574004104087" duration="4697000" />
-      <workItem from="1574062402613" duration="10815000" />
-      <workItem from="1574083839346" duration="16000" />
-      <workItem from="1574096691167" duration="5000" />
-      <workItem from="1574122127678" duration="9295000" />
-      <workItem from="1574159964079" duration="3316000" />
-      <workItem from="1574170645547" duration="692000" />
-      <workItem from="1574171795820" duration="52851000" />
-      <workItem from="1574302128718" duration="13571000" />
-      <workItem from="1574389998798" duration="40569000" />
-      <workItem from="1574506986180" duration="624000" />
-      <workItem from="1574514237585" duration="3642000" />
-      <workItem from="1574693565333" duration="1760000" />
-      <workItem from="1574868135938" duration="115000" />
-=======
-      <updated>1359379246138</updated>
-      <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1571404822830" duration="56000" />
-      <workItem from="1571404943753" duration="2690000" />
-      <workItem from="1571544310195" duration="280000" />
-      <workItem from="1571649880768" duration="547000" />
-      <workItem from="1571650526011" duration="6313000" />
-      <workItem from="1571706192168" duration="640000" />
-      <workItem from="1571734508111" duration="14988000" />
-      <workItem from="1571879958861" duration="6637000" />
-      <workItem from="1571887246012" duration="2311000" />
-      <workItem from="1571912888481" duration="15467000" />
-      <workItem from="1571968881550" duration="7682000" />
-      <workItem from="1572059609883" duration="165000" />
-      <workItem from="1572267332802" duration="3690000" />
-      <workItem from="1572308191229" duration="3758000" />
-      <workItem from="1572323097876" duration="3131000" />
-      <workItem from="1572696042163" duration="6807000" />
-      <workItem from="1572711154452" duration="9400000" />
-      <workItem from="1572865737227" duration="16476000" />
-      <workItem from="1572962357356" duration="1967000" />
->>>>>>> jinl
+      <updated>1574908562712</updated>
+      <workItem from="1574908564041" duration="2246000" />
+      <workItem from="1575266069795" duration="23000" />
+      <workItem from="1575269122993" duration="207000" />
+      <workItem from="1575274716766" duration="1150000" />
+      <workItem from="1575511440859" duration="5375000" />
     </task>
-    <task id="LOCAL-00001" summary="完成预约信息的功能">
-      <created>1573636408623</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1573636408623</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="229845000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="9001000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1166" extended-state="6" />
+    <frame x="-150" y="61" width="1290" height="730" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19361277" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2353896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -540,30 +484,30 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294686" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499501" weight="0.3172147" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24468085" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29264215" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39924315" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937685" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294686" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294686" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49951172" weight="0.33017975" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.500499" side_tool="true" weight="0.3172147" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32688588" />
-      <window_info anchor="bottom" id="Statistic" order="13" sideWeight="0.49951172" weight="0.3220503" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004883" side_tool="true" weight="0.32261115" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.49329758" />
+      <window_info anchor="bottom" id="Statistic" order="13" sideWeight="0.49951172" weight="0.32291666" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.24051896" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32984033" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.32984033" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32984033" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19361277" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19436997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -572,639 +516,281 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294686" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499501" visible="true" weight="0.3172147" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24468085" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23458445" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39924315" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937685" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294686" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294686" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49951172" weight="0.33017975" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.500499" side_tool="true" weight="0.3172147" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32688588" />
-      <window_info anchor="bottom" id="Statistic" order="13" sideWeight="0.49951172" weight="0.3220503" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004883" side_tool="true" weight="0.32261115" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.49329758" />
+      <window_info anchor="bottom" id="Statistic" order="13" sideWeight="0.49951172" weight="0.32291666" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.24051896" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32984033" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.32984033" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32984033" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-=======
-    <option name="totallyTimeSpent" value="104307000" />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
->>>>>>> jinl
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-<<<<<<< HEAD
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-=======
-              <option name="COLUMN_ORDER" />
->>>>>>> jinl
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-<<<<<<< HEAD
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LIMIT_HISTORY" value="false" />
-=======
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-    <MESSAGE value="完成预约信息的功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成预约信息的功能" />
->>>>>>> jinl
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-<<<<<<< HEAD
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/user/AccountManageController.java">
+    <entry file="file://$PROJECT_DIR$/src/adminUI/BookManageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/acctreg.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="46" column="19" selection-start-line="40" selection-start-column="11" selection-end-line="46" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="347" column="35" selection-start-line="347" selection-start-column="35" selection-end-line="347" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/bookadd.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AdminMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/ExceptionInfoRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/mainscreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/bookbrhistory.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookBRHistroyRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="342">
+          <caret line="450" selection-start-line="450" selection-end-line="450" />
           <folding>
-            <element signature="e#1518#1519#0" expanded="true" />
-            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#17108#17109#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/history.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/HistoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="62" column="52" lean-forward="true" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/bookmanagehistory.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctManageRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding>
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1647#1648#0" expanded="true" />
-            <element signature="e#1680#1681#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1855#1856#0" expanded="true" />
-            <element signature="e#1888#1889#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
-            <element signature="e#1950#1951#0" expanded="true" />
-            <element signature="e#1999#2000#0" expanded="true" />
-            <element signature="e#2025#2026#0" expanded="true" />
-            <element signature="e#2063#2064#0" expanded="true" />
-            <element signature="e#2096#2097#0" expanded="true" />
-            <element signature="e#2128#2129#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-            <element signature="e#2213#2214#0" expanded="true" />
-            <element signature="e#2241#2242#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
-            <element signature="e#2320#2321#0" expanded="true" />
-            <element signature="e#2351#2352#0" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2434#2435#0" expanded="true" />
-            <element signature="e#2461#2462#0" expanded="true" />
-            <element signature="e#2501#2502#0" expanded="true" />
-            <element signature="e#2536#2537#0" expanded="true" />
-            <element signature="e#2568#2569#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2653#2654#0" expanded="true" />
-            <element signature="e#2681#2682#0" expanded="true" />
-            <element signature="e#2723#2724#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookManageRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#1398#1399#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookMHistoryRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AddRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/acctmanagehistory.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/acctmanage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/login/ForgetPwdController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AdminMainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="85" column="40" lean-forward="true" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
-          <folding>
-            <element signature="e#1910#1911#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#2010#2011#0" expanded="true" />
-            <element signature="e#2049#2050#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2165#2166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookBRHistoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="-1356">
+          <caret line="131" column="86" selection-start-line="131" selection-start-column="86" selection-end-line="131" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookAddController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="143" column="34" lean-forward="true" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookManageHistoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#choiceEvent#0;class#BookManageHistoryController#0" />
-            <element signature="method#searchEvent#0;class#BookManageHistoryController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctMHistoryRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctManageHistoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#choiceEvent#0;class#AcctManageHistoryController#0" />
-            <element signature="method#searchEvent#0;class#AcctManageHistoryController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/login/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="494" column="44" lean-forward="true" selection-start-line="494" selection-start-column="44" selection-end-line="494" selection-end-column="44" />
-          <folding>
-            <element signature="e#1251#1821#0" />
-            <element signature="e#1828#4088#0" />
-            <element signature="e#4094#7908#0" />
-            <element signature="e#7913#10352#0" />
-            <element signature="e#10357#12218#0" />
-            <element signature="e#12224#13457#0" />
-            <element signature="e#13462#14678#0" />
-            <element signature="e#19770#20846#0" />
-            <element signature="e#20852#22128#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="3779" selection-start-line="3779" selection-end-line="3779" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/TableColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="429" selection-start-line="429" selection-end-line="429" />
-          <folding>
-            <element signature="e#18479#18480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/exceptioninfosearch.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/beans/property/IntegerPropertyBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/beans/property/ReadOnlyIntegerWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="e#2665#2666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/SelectionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctRegController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="575" column="11" lean-forward="true" selection-start-line="570" selection-start-column="8" selection-end-line="575" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initShowState#0;class#AcctRegController#0" />
-            <element signature="method#choice#0;class#AcctRegController#0" />
-            <element signature="method#regAdmin#0;class#AcctRegController#0" />
-            <element signature="method#regUsr#0;class#AcctRegController#0" />
-            <element signature="method#textFieldContextListener#0;class#AcctRegController#0" />
-            <element signature="method#checkAdminInput#0;class#AcctRegController#0" />
-            <element signature="method#checkUsrInput#0;class#AcctRegController#0" />
-            <element signature="method#usrRegSingle#0;class#AcctRegController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="374" selection-start-line="374" selection-end-line="374" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/beans/property/ObjectPropertyBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
-          <folding>
-            <element signature="e#3863#3864#0" expanded="true" />
-            <element signature="e#3904#3905#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/TableView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="1000" selection-start-line="1000" selection-end-line="1000" />
-          <folding>
-            <element signature="e#46988#46989#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/IndexedCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-          <folding>
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/TableRow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-          <folding>
-            <element signature="e#7937#7938#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/Control.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="886" selection-start-line="886" selection-end-line="886" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9154" selection-start-line="9154" selection-end-line="9154" />
-          <folding>
-            <element signature="e#317595#317596#0" expanded="true" />
-            <element signature="e#317639#317640#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="305" column="5" selection-start-line="288" selection-start-column="4" selection-end-line="305" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#choiceValueEvent#0;class#AcctManageController#0" />
-            <element signature="method#tableFocusContext#0;class#AcctManageController#0" />
-            <element signature="method#initTable#0;class#AcctManageController#0" />
-            <element signature="method#searchEvent#0;class#AcctManageController#0" />
-            <element signature="method#modifyPwd#0;class#AcctManageController#0" />
-            <element signature="method#clearException#0;class#AcctManageController#0" />
-            <element signature="method#addAcctManageRecord#0;class#AcctManageController#0" />
-            <element signature="method#lostFind#0;class#AcctManageController#0" />
-            <element signature="method#deleteChars#0;class#AcctManageController#0" />
-            <element signature="method#setStateToLost#0;class#AcctManageController#0" />
-            <element signature="method#setStateToFind#0;class#AcctManageController#0" />
-            <element signature="method#deleteAcct#0;class#AcctManageController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/TableCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="470" selection-start-line="470" selection-end-line="470" />
-          <folding>
-            <element signature="e#10476#10486#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/ConnectDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/fxml/FXML.java">
+    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctRegController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="153" column="97" selection-start-line="153" selection-start-column="97" selection-end-line="153" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Software/Java/jdk1.8.0_181/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="2526" column="28" selection-start-line="2526" selection-start-column="28" selection-end-line="2526" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/user_main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5775">
+          <caret line="283" column="17" selection-start-line="283" selection-start-column="17" selection-end-line="283" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/UserMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/ExceptionInfoSearch.java">
+    <entry file="file://$PROJECT_DIR$/src/user/main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+        <state relative-caret-position="1325">
+          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/history.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/home.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctMHistoryRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-604">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/AcctManageHistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/AdminMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-654">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/ExitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/home.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/AdminMainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1370">
+          <caret line="156" column="9" lean-forward="true" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#initTable#0;class#ExceptionInfoSearch#0" />
-            <element signature="method#tableTooltip#0;class#ExceptionInfoSearch#0" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4562#4563#0" expanded="true" />
+            <element signature="e#4713#4714#0" expanded="true" />
+            <element signature="e#4793#4794#0" expanded="true" />
+            <element signature="e#4943#4944#0" expanded="true" />
+            <element signature="e#5020#5021#0" expanded="true" />
+            <element signature="e#5171#5172#0" expanded="true" />
+            <element signature="e#5254#5255#0" expanded="true" />
+            <element signature="e#5456#5457#0" expanded="true" />
+            <element signature="e#5535#5536#0" expanded="true" />
+            <element signature="e#5684#5685#0" expanded="true" />
+            <element signature="e#5757#5758#0" expanded="true" />
+            <element signature="e#5905#5906#0" expanded="true" />
+            <element signature="e#5981#5982#0" expanded="true" />
+            <element signature="e#6128#6129#0" expanded="true" />
+            <element signature="e#6201#6202#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminUI/BookManageController.java">
+    <entry file="file://$PROJECT_DIR$/src/adminUI/mainscreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="644" column="31" selection-start-line="644" selection-start-column="31" selection-end-line="644" selection-end-column="31" />
+        <state relative-caret-position="488">
+          <caret line="73" column="27" lean-forward="true" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/library.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="93" column="11" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/acctmanage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="34" column="84" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adminUI/bookmanage.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state relative-caret-position="306">
+          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-=======
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LibrarySystemGDUFE$Main.ic" NAME="Main Coverage Results" MODIFIED="1571979224029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>sample.*</FILTER>
-    </SUITE>
+    <entry file="file://$PROJECT_DIR$/src/user/exit.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/PunishManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="86" column="38" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/information.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/UserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/InformationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="54" column="9" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="54" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminUI/exit.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1277,6 +863,5 @@
         </settings>
       </state>
     </states>
->>>>>>> jinl
   </component>
 </project>

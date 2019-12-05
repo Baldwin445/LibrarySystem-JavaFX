@@ -33,7 +33,6 @@
             <Button fx:id="search1" layoutX="282.0" layoutY="46.0" mnemonicParsing="false" text="搜索" />
          </children>
       </AnchorPane>
-        <Button fx:id="returnB" layoutX="680.0" layoutY="530.0" mnemonicParsing="false" prefWidth="80.0" text="归还书籍" />
         <TableView fx:id="table" layoutX="1.0" layoutY="105.0" prefHeight="415.0" prefWidth="868.0" stylesheets="@../css/library.css">
             <columns>
                 <TableColumn fx:id="id" prefWidth="90.0" text="书籍ID" />
@@ -46,13 +45,15 @@
                 <TableColumn fx:id="state" minWidth="0.0" prefWidth="90.0" text="书籍状态" />
             </columns>
         </TableView>
-        <Button fx:id="stopB" layoutX="500.0" layoutY="530.0" mnemonicParsing="false" prefWidth="80.0" text="暂停借阅" />
-        <Button fx:id="modify" layoutX="590.0" layoutY="530.0" mnemonicParsing="false" prefWidth="80.0" text="修改信息" />
+
       <ImageView fx:id="change" fitHeight="30.0" fitWidth="74.0" layoutX="5.0" layoutY="5.0">
          <image>
             <Image url="@../image/bookmanage/open.png" />
          </image>
       </ImageView>
-      <Button fx:id="delete" layoutX="770.0" layoutY="530.0" mnemonicParsing="false" prefWidth="80.0" text="删除书籍" />
+        <Button fx:id="returnB" styleClass="blue-theme" layoutX="470.0" layoutY="530.0" mnemonicParsing="false" prefWidth="80.0" text="归还书籍" />
+        <Button fx:id="modify" styleClass="blue-theme" layoutX="570.0" layoutY="530.0" mnemonicParsing="false" prefWidth="80.0" text="修改信息" />
+        <Button fx:id="stopB" styleClass="warm-theme" layoutX="670.0" layoutY="530.0" mnemonicParsing="false" prefWidth="80.0" text="暂停借阅" />
+        <Button fx:id="delete" styleClass="warning-theme" layoutX="770.0" layoutY="530.0" mnemonicParsing="false" prefWidth="80.0" text="删除书籍" />
     </children>
 </AnchorPane>

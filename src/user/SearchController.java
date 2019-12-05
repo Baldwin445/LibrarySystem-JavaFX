@@ -151,7 +151,7 @@ public class SearchController {
             }
             table.setItems(manageDate);
             operate.setCellFactory((col) -> {
-                TableCell<BookManageRecord, String> cell = new TableCell<>(){
+                TableCell<BookManageRecord, String> cell = new TableCell<BookManageRecord, String>(){
                     Button borrowButton = new Button("借阅");
                     @Override
                     protected void updateItem(String item, boolean empty) {

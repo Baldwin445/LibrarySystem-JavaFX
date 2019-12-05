@@ -14,11 +14,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import properties.Property;
 
-<<<<<<< HEAD
-import javax.xml.soap.Text;
-=======
-//import javax.xml.soap.Text;
->>>>>>> jinl
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -30,7 +25,7 @@ public class AdminMainController implements Initializable{
 
     // fxml文件
     @FXML
-    private AnchorPane home, xgmm, zxzh, gsjgjyz, jcwg, xzsj, scsj, xgsjxx,tszthfjy,xzgrts,glsjxx,zczh,glzh,sjjhls,zhglls,ycxxcx,brHistory;
+    private AnchorPane exit, home, xgmm, zxzh, gsjgjyz, jcwg, xzsj, scsj, xgsjxx,tszthfjy,xzgrts,glsjxx,zczh,glzh,sjjhls,zhglls,ycxxcx,brHistory;
     // Button
     @FXML
     private Button homeButton, xgmmButton, zxzhButton, gsjgjyzButton, jcwgButton, xzsjButton, scsjButton, xgsjxxButton,tszthfjyButton,tc,xz,xzgrtsButton,glzhButton,glsjxxButton,zczhButton,sjjhlsButton,zhgllsButton,ycxxcxButton,tcButton;
@@ -94,6 +89,7 @@ public class AdminMainController implements Initializable{
     public void ontcClick(ActionEvent event){
         visible("tcButton");
     }
+
 
     private Statement stmt;
 
@@ -168,6 +164,13 @@ public class AdminMainController implements Initializable{
         }
         else{
             ycxxcx.setVisible(false);
+        }
+
+        if(button.equals("tcButton")) {
+            exit.setVisible(true);
+        }
+        else{
+            exit.setVisible(false);
         }
     }
 

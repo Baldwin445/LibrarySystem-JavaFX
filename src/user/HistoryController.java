@@ -3,21 +3,15 @@ package user;
 import database.ConnectDB;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-<<<<<<< HEAD
-=======
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
->>>>>>> jinl
 import javafx.fxml.FXML;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-<<<<<<< HEAD
-=======
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
->>>>>>> jinl
 import properties.Property;
 
 import java.sql.ResultSet;
@@ -25,27 +19,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-<<<<<<< HEAD
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Optional;
-=======
 import java.util.*;
->>>>>>> jinl
 
 public class HistoryController {
     @FXML
     private TableView<BorrowRecord> historyTable;
     @FXML
-<<<<<<< HEAD
-    private TableColumn<BorrowRecord, String> bookIDCol, bookNameCol, authorCol, borrowTimeCol, returnTimeCol, operateCol;
-
-    private String userID = Property.getKeyValue("ID");
-    private Statement stm = ConnectDB.connect();
-
-    @FXML
-    private void initialize() throws SQLException {
-=======
     private TableColumn<BorrowRecord, String> bookIDCol, bookNameCol, authorCol, borrowTimeCol, returnTimeCol, operateCol, historyState;
     @FXML
     private ImageView refresh;
@@ -60,7 +39,6 @@ public class HistoryController {
     }
 
     public void initTable() throws SQLException {
->>>>>>> jinl
         ObservableList<BorrowRecord> historyData = FXCollections.observableArrayList();
         // 设置每个column对应的属性
         bookIDCol.setCellValueFactory(new PropertyValueFactory<>("bookID"));
@@ -69,40 +47,6 @@ public class HistoryController {
         borrowTimeCol.setCellValueFactory(new PropertyValueFactory<>("borrowDate"));
         returnTimeCol.setCellValueFactory(new PropertyValueFactory<>("returnDate"));
 
-<<<<<<< HEAD
-        // 获取数据库中的数据
-        String queryString = "SELECT book_borrow_table.book_id, book_name, author, b_date, r_date, renew\n" +
-                "FROM `book_borrow_table`, `book_info_table`\n" +
-                "WHERE book_borrow_table.book_id = book_info_table.book_id";
-        ResultSet rSet = stm.executeQuery(queryString);
-        // 把查询到的数据放进表里
-        while (rSet.next()){
-            historyData.addAll(new BorrowRecord( rSet.getString(1), rSet.getString(2), rSet.getString(3), rSet.getString(4).substring(0,10), rSet.getString(5).substring(0,10)));
-        }
-
-        // 添加一个按钮
-        operateCol.setCellFactory((col) -> {
-            TableCell<BorrowRecord, String> cell = new TableCell() {
-                Button renewButton = new Button("续借");
-
-                @Override
-                protected void updateItem(Object item, boolean empty) {
-                    super.updateItem(item, empty);
-                    renewButton.getStyleClass().add("green-theme");
-                    if (!empty){
-                        BorrowRecord borrowRecord = (BorrowRecord) getTableView().getItems().get(getIndex());
-                        renewButton.setOnMouseClicked((m) -> {
-                            try {
-                                Renew(borrowRecord);
-                            } catch (SQLException | ParseException e) {
-                                e.printStackTrace();
-                            }
-                        });
-                        setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
-                        setGraphic(renewButton);
-                    }
-                    else {
-=======
         // 获取数据库中正在借阅的数据
         String queryString = "SELECT book_borrow_table.book_id, book_name, author, b_date, r_date, renew\n" +
                 "FROM `book_borrow_table`, `book_info_table`\n" +
@@ -130,14 +74,14 @@ public class HistoryController {
         }
         // 添加一个按钮
         operateCol.setCellFactory((col) -> {
-            TableCell<BorrowRecord, String> cell = new TableCell<>(){
+            TableCell<BorrowRecord, String> cell = new TableCell<BorrowRecord, String>(){
                 Button renewButton = new Button("续借");
                 @Override
                 protected void updateItem(String item, boolean empty) {
                     super.updateItem(item, empty);
                     renewButton.getStyleClass().add("green-theme");
                     if (!empty) {
-                        BorrowRecord borrowRecord = getTableView().getItems().get(getIndex());
+                        BorrowRecord borrowRecord = (BorrowRecord)getTableView().getItems().get(getIndex());
                         // 比较时间的大小，如果时间
                         // 检查是续借过
                         String query = "select renew from `book_borrow_table` where book_id = '%s' and acct_id = '%s'";
@@ -177,45 +121,21 @@ public class HistoryController {
                         setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
                         setGraphic(renewButton);
                     } else {
->>>>>>> jinl
                         setGraphic(null);
                     }
                 }
             };
-<<<<<<< HEAD
-
-//                @Override
-//                protected void updateItem(String item, boolean empty) {
-//                    super.updateItem(item, empty);
-//                    renewButton.getStyleClass().add("green-theme");
-//                    if (!empty) {
-//                        BorrowRecord borrowRecord = getTableView().getItems().get(getIndex());
-//                        renewButton.setOnMouseClicked((m) -> {
-//                            try {
-//                                Renew(borrowRecord);
-//                            } catch (SQLException | ParseException e) {
-//                                e.printStackTrace();
-//                            }
-//                        });
-//                        setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
-//                        setGraphic(renewButton);
-//                    } else {
-//                        setGraphic(null);
-//                    }
-//                }
-//            };
-=======
             return cell;
         });
 
         historyState.setCellFactory((col) -> {
-            TableCell<BorrowRecord, String> cell = new TableCell<>(){
+            TableCell<BorrowRecord, String> cell = new TableCell<BorrowRecord, String>(){
                 @Override
                 protected void updateItem(String item, boolean empty) {
                     Label state = new Label("借阅中");
                     super.updateItem(item, empty);
                     if (!empty) {
-                        BorrowRecord borrowRecord = getTableView().getItems().get(getIndex());
+                        BorrowRecord borrowRecord = (BorrowRecord)getTableView().getItems().get(getIndex());
                         String queryString = "SELECT br_type FROM `br_record_table` where book_id = " +borrowRecord.getBookID()
                                 + " and acct_id = '" + userID + "' and br_date = '" + borrowRecord.getReturnDate() + "'";
                         try {
@@ -235,7 +155,6 @@ public class HistoryController {
                     }
                 }
             };
->>>>>>> jinl
             return cell;
         });
         historyTable.setItems(historyData);
@@ -250,19 +169,6 @@ public class HistoryController {
             return;
         }
 
-<<<<<<< HEAD
-        // 检查是续借过
-        String query = "select renew from `book_borrow_table` where book_id = '%s' and acct_id = '%s'";
-        query = String.format(query, borrowRecord.getBookID(), userID);
-        ResultSet rSet = stm.executeQuery(query);
-        rSet.next();
-        if (!rSet.getString("renew").equals("N")){
-            // 如果续借过，退出程序
-            AccountManageController.showAlert(Alert.AlertType.INFORMATION, "提示", "你已经续借过一次！");
-            return;
-        }
-=======
->>>>>>> jinl
 
         // 确认是否真的要续借
         Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION, "确定续借？");
@@ -280,19 +186,12 @@ public class HistoryController {
         rightNow.setTime(date);
         rightNow.add(Calendar.MONTH, 1);
         String  rDate = simpleDateFormat.format(rightNow.getTime());
-<<<<<<< HEAD
-        query = "UPDATE `library`.`book_borrow_table` SET `r_date` = '%s', `renew` = 'Y' " +
-=======
         String query = "UPDATE `library`.`book_borrow_table` SET `r_date` = '%s', `renew` = 'Y' " +
->>>>>>> jinl
                 "WHERE `book_id` = '%s' AND `acct_id` = '%s'";
         query = String.format(query, rDate, borrowRecord.getBookID(), userID);
         stm.executeUpdate(query);
 
         // 写入图书操作记录表
-<<<<<<< HEAD
-        query = "";
-=======
         String getBrID = "select count(*) from `br_record_table`";
         rSet = stm.executeQuery(getBrID);
         rSet.next();
@@ -301,14 +200,11 @@ public class HistoryController {
         query = "INSERT INTO `library`.`br_record_table`(`book_id`, `acct_id`, `br_date`, `admin_id`, `br_id`, `br_type`) VALUES " +
                 "(%s, '%s', now(), '%s', '%s', 'C')";
         query = String.format(query, borrowRecord.getBookID(), userID, userID, BrID);
->>>>>>> jinl
         stm.executeUpdate(query);
 
         AccountManageController.showAlert(Alert.AlertType.INFORMATION, "提示", "续借成功！！");
         initialize();
     }
-<<<<<<< HEAD
-=======
 
     private void onRefresh(){
         refresh.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -322,5 +218,4 @@ public class HistoryController {
             }
         });
 }
->>>>>>> jinl
 }
