@@ -26,6 +26,7 @@ import properties.Property;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Optional;
 
 
 public class BookManageController {
@@ -413,6 +414,13 @@ public class BookManageController {
     /*****删除书籍*****/
     /*****应该添加警示内容进行警告******/
     private void deleteBook(String id){
+        Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION, "确定删除此书籍？");
+        confirmation.setTitle("删除书籍");
+        Optional<ButtonType> result = confirmation.showAndWait();
+        if (result.get() == ButtonType.CANCEL){
+            return;
+        }
+
         try { // 删除书籍
             ConnectDB.update("DELETE FROM book_info_table WHERE book_id = '"+id+"'");
         }catch (Exception e){

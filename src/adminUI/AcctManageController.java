@@ -16,6 +16,7 @@ import properties.Property;
 import javax.xml.transform.Result;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Optional;
 
 public class AcctManageController {
     private String sql = "SELECT acct_id,acct_name,acct_sex,acct_age,acct_tel," +
@@ -401,6 +402,13 @@ public class AcctManageController {
 
     /********注销账号*********/
     private void deleteAcct(String id) {
+        Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION, "确定注销此账号？");
+        confirmation.setTitle("注销账号");
+        Optional<ButtonType> result = confirmation.showAndWait();
+        if (result.get() == ButtonType.CANCEL){
+            return;
+        }
+
         try {
             addData.remove(table.getSelectionModel().getSelectedItem());
         } catch (Exception e) {

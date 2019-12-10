@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="579.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HomepageController">
+<AnchorPane prefHeight="579.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.HomepageController">
    <children>
       <ImageView fitHeight="579.0" fitWidth="886.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/library_sanshui.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="username" layoutX="125.0" layoutY="32.0" prefHeight="20.0" prefWidth="32.0" text="道理" />
-      <Text layoutX="165.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="，欢迎使用广东财经大学图书馆系统。" />
+      <Label fx:id="username" layoutX="109.0" layoutY="26.0" prefHeight="27.0" prefWidth="69.0" text="道理" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Text fill="WHITE" layoutX="188.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="，欢迎使用广东财经大学图书馆系统。">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
    </children>
 </AnchorPane>
