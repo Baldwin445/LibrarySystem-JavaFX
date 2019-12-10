@@ -13,7 +13,7 @@
             <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
                <children>
                   <Label text="姓名：" />
-                  <TextField fx:id="name" editable="false" styleClass=" -area" />
+                  <TextField fx:id="name" editable="false" styleClass="text-area" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="322.0">
