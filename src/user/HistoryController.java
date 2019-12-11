@@ -88,21 +88,23 @@ public class HistoryController {
                         query = String.format(query, borrowRecord.getBookID(), userID);
                         try {
                             ResultSet resultSet;
+                            String query1 = "SELECT count(br_type) FROM `br_record_table` where book_id = " +borrowRecord.getBookID()
+                                    + " and acct_id = '" + userID + "'";
+                            resultSet = stm.executeQuery(query1);
+                            resultSet.next();
+                            int number = resultSet.getInt(1);
+                            resultSet.last();
+                            if (number%2==0){
+                                // 如果已经归还，那么没有操作
+                                return;
+                            }
+
                             resultSet = stm.executeQuery(query);
                             resultSet.next();
                             String renewText = resultSet.getString("renew");
                             resultSet.last();
-                            query = "SELECT br_type FROM `br_record_table` where book_id = " +borrowRecord.getBookID()
-                                    + " and acct_id = '" + userID + "' and br_date = '" + borrowRecord.getReturnDate() + "'";
-                            resultSet = stm.executeQuery(query);
-                            resultSet.next();
-                            String brType = resultSet.getString("br_type");
-                            resultSet.last();
-                            if (brType.equals("R")){
-                                // 如果已经归还，那么没有操作
-                                renewButton.setText("无");
-                            }
-                            else if (!renewText.equals("N")){
+
+                            if (!renewText.equals("N")){
                                 // 如果续借过，Button显示为已经续借过
                                 renewButton.setText("己续借");
                             }
@@ -136,13 +138,13 @@ public class HistoryController {
                     super.updateItem(item, empty);
                     if (!empty) {
                         BorrowRecord borrowRecord = (BorrowRecord)getTableView().getItems().get(getIndex());
-                        String queryString = "SELECT br_type FROM `br_record_table` where book_id = " +borrowRecord.getBookID()
-                                + " and acct_id = '" + userID + "' and br_date = '" + borrowRecord.getReturnDate() + "'";
+                        String queryString = "SELECT count(br_type) FROM `br_record_table` where book_id = " +borrowRecord.getBookID()
+                                + " and acct_id = '" + userID + "'";
                         try {
                             ResultSet resultSet = stm.executeQuery(queryString);
                             resultSet.next();
-                            String a = resultSet.getString(1);
-                            if (resultSet.getString(1).equals("R")){
+//                            String a = resultSet.getString("br_type");
+                            if (resultSet.getInt(1)%2 == 0){
                                 state.setText("已归还");
                             }
                         } catch (SQLException e) {

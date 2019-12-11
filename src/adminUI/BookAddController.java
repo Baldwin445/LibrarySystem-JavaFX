@@ -159,20 +159,13 @@ public class BookAddController {
             resultSet.next();
             int rec_id = Integer.parseInt(resultSet.getString(1)) + 1;
             ConnectDB.update("INSERT INTO bm_record_table VALUES ('N"+ rec_id +"', 'N', '"+ id +
-                    "', '"+ Property.getKeyValue("ID")+"' , '从荐购记录添加书籍' , now())");
+                    "', '"+ Property.getKeyValue("ID")+"' , now() , '从荐购记录添加书籍')");
             System.out.println("ISBN: "+isbn +" 已记录管理");
-
-
 
         }
         catch (SQLException e){
             e.printStackTrace();
         }
-
-
-
-
-
 
     }
     private void updateNoPassInfo(int index){

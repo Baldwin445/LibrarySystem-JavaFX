@@ -44,7 +44,7 @@ public class SearchController {
         private Statement stmt = ConnectDB.connect();
         private String userID = Property.getKeyValue("ID");
         private String sql = "SELECT book_id, book_name, cat_id, publisher, author, isbn," +
-            "publish_year,book_state FROM book_info_table";;
+            "publish_year,book_state FROM book_info_table";
 
         @FXML
         private void initialize(){
@@ -127,7 +127,7 @@ public class SearchController {
                 while (rSet.next()){
                     BookNumName.put(rSet.getString(1), rSet.getInt(2));
                 }
-                rSet = ConnectDB.search(getBookSurplus);
+//                rSet = ConnectDB.search(getBookSurplus);
                 Set nameSet = BookNumName.keySet();
                 for(Iterator item = nameSet.iterator(); item.hasNext();)
                 {
@@ -138,7 +138,7 @@ public class SearchController {
                     BookNumNameSurplus.put(key, resultSet.getInt(1));
                     resultSet.last();
                 }
-                rSet = stmt.executeQuery(sql);
+                rSet = stmt.executeQuery("SELECT book_name, cat_id, publisher, author, isbn,publish_year FROM book_info_table GROUP BY book_name");
                 while (rSet.next()){
                     String num = BookNumNameSurplus.get(rSet.getString("book_name")) + "/" + BookNumName.get(rSet.getString("book_name"));
                     manageDate.addAll(new BookManageRecord(rSet.getString("book_name"),
@@ -160,7 +160,9 @@ public class SearchController {
                         if (!empty) {
                             BookManageRecord bookManageRecord = getTableView().getItems().get(getIndex());
                             int num = Integer.parseInt(bookManageRecord.getBook_num().substring(0,1));
-                            if (num==0) borrowButton.setText("预约");
+                            String name = bookManageRecord.getBookName();
+                            if (num==0)
+                                borrowButton.setText("预约");
                             borrowButton.setOnMouseClicked((m) -> {
                                 Borrow(bookManageRecord, borrowButton);
                             });
@@ -312,6 +314,7 @@ public class SearchController {
                     // 检查用户的预约，如果超过三次就提示不能再预约了
                     query = "SELECT count(acct_id) FROM `book_order_table` where acct_id = " + userID;
                     rSet = stmt.executeQuery(query);
+                    rSet.next();
                     int requestNum = rSet.getInt(1);
                     if (requestNum >= 3){
                         UIOperate.showAlert(Alert.AlertType.INFORMATION, "提示", "你当前所预约的书已经到达三本，不能继续预约！");

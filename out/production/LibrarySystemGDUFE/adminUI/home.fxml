@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -17,6 +18,9 @@
             <Image url="@../image/广财.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="124.0" layoutY="46.0" text="欢迎进入广东财经大学图书管理系统" />
+      <Label layoutX="74.0" layoutY="47.0" text="欢迎进入广东财经大学图书管理系统" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
    </children>
 </AnchorPane>
