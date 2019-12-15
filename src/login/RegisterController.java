@@ -481,6 +481,12 @@ public class RegisterController {
 
         Stage stage = (Stage) step_one.getScene().getWindow();
         stage.close();
+        try {
+            Login_UI login = new Login_UI();
+            login.start(new Stage());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     //设置默认聚焦点

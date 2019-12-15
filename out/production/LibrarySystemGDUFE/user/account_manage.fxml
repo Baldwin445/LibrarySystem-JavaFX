@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Text?>
-<AnchorPane prefHeight="540.0" prefWidth="670.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.AccountManageController">
+
+<AnchorPane prefHeight="560.0" prefWidth="850.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.AccountManageController">
    <children>
-      <SplitPane dividerPositions="0.4568835098335855" layoutX="4.0" prefHeight="540.0" prefWidth="663.0">
+      <SplitPane dividerPositions="0.5" layoutX="4.0" prefHeight="560.0" prefWidth="850.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="467.0" prefWidth="273.0" styleClass="default-theme">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="558.0" prefWidth="425.0" styleClass="default-theme">
                <children>
-                  <Text layoutX="14.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="修改密码" />
-                  <Label layoutX="14.0" layoutY="78.0" text="旧密码" />
-                  <Label layoutX="14.0" layoutY="120.0" text="新密码" />
-                  <Label layoutX="8.0" layoutY="158.0" text="再次输入" />
-                   <PasswordField fx:id="oldPassword" layoutX="68.0" layoutY="72.0" />
-                   <PasswordField fx:id="newPassword" layoutX="68.0" layoutY="114.0" />
-                  <PasswordField fx:id="againPassword" layoutX="68.0" layoutY="152.0" />
-                  <Button fx:id="changePassword" layoutX="13.0" layoutY="193.0" mnemonicParsing="false" onAction="#onChangePassword" styleClass="dark-gray-theme" text="修改" textFill="WHITE" />
+                  <Text layoutX="14.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="修改密码">
+                     <font>
+                        <Font name="System Italic" size="25.0" />
+                     </font></Text>
+                  <Label layoutX="13.0" layoutY="158.0" text="旧密码" />
+                  <Label layoutX="14.0" layoutY="230.0" text="新密码" />
+                  <Label layoutX="13.0" layoutY="297.0" text="再次输入" />
+                   <PasswordField fx:id="oldPassword" layoutX="75.0" layoutY="153.0" />
+                   <PasswordField fx:id="newPassword" layoutX="75.0" layoutY="225.0" />
+                  <PasswordField fx:id="againPassword" layoutX="75.0" layoutY="292.0" />
+                  <Button fx:id="changePassword" layoutX="13.0" layoutY="390.0" mnemonicParsing="false" onAction="#onChangePassword" prefHeight="30.0" prefWidth="80.0" styleClass="dark-gray-theme" text="修改" textFill="WHITE" />
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="352.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="558.0" prefWidth="380.0">
                <children>
-                  <SplitPane dividerPositions="0.5" layoutY="1.0" orientation="VERTICAL" prefHeight="538.0" prefWidth="368.0" styleClass="default-theme">
+                  <SplitPane dividerPositions="0.5" layoutY="1.0" orientation="VERTICAL" prefHeight="558.0" prefWidth="420.0" styleClass="default-theme">
                     <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="257.0" prefWidth="364.0">
                            <children>
-                              <Label layoutX="23.0" layoutY="79.0" text="密码" />
-                              <PasswordField fx:id="lossPassword" layoutX="71.0" layoutY="75.0" />
-                              <Button fx:id="reportLoss" layoutX="10.0" layoutY="128.0" mnemonicParsing="false" onAction="#onReportLoss" styleClass="dark-gray-theme" text="挂失" textFill="#fcfcfc" />
-                              <Text layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="挂失" />
+                              <Label layoutX="23.0" layoutY="106.0" text="密码" />
+                              <PasswordField fx:id="lossPassword" layoutX="71.0" layoutY="102.0" />
+                              <Button fx:id="reportLoss" layoutX="23.0" layoutY="188.0" mnemonicParsing="false" onAction="#onReportLoss" prefHeight="30.0" prefWidth="80.0" styleClass="dark-gray-theme" text="挂失" textFill="#fcfcfc" />
+                              <Text layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="挂失">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font></Text>
                            </children>
                         </AnchorPane>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="158.0">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="277.0" prefWidth="375.0">
                            <children>
-                              <Text layoutX="13.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="解除挂失" />
-                              <Label layoutX="23.0" layoutY="59.0" text="密码" />
-                              <PasswordField fx:id="removeLossPassword" layoutX="71.0" layoutY="55.0" />
-                              <Button fx:id="removeLoss" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#onRemoveLoss" styleClass="dark-gray-theme" text="解除挂失" textFill="WHITE" />
+                              <Text layoutX="21.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="解除挂失">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font></Text>
+                              <Label layoutX="21.0" layoutY="121.0" text="密码" />
+                              <PasswordField fx:id="removeLossPassword" layoutX="69.0" layoutY="117.0" />
+                              <Button fx:id="removeLoss" layoutX="23.0" layoutY="205.0" mnemonicParsing="false" onAction="#onRemoveLoss" styleClass="dark-gray-theme" text="解除挂失" textFill="WHITE" />
                            </children>
                         </AnchorPane>
                     </items>

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<AnchorPane prefHeight="442.0" prefWidth="600.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.InformationController">
+
+<AnchorPane prefHeight="519.0" prefWidth="781.0" stylesheets="@../css/library.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.InformationController">
    <children>
       <VBox layoutX="76.0" layoutY="15.0" prefHeight="360.0" prefWidth="322.0">
          <children>
@@ -79,7 +82,7 @@
       <Button layoutX="76.0" layoutY="387.0" mnemonicParsing="false" onAction="#onModifyClick" styleClass="dark-gray-theme" text="修改" textFill="WHITE" />
       <Button layoutX="148.0" layoutY="387.0" mnemonicParsing="false" onAction="#onSaveClick" styleClass="dark-gray-theme" text="保存" textFill="WHITE" />
 
-      <ImageView fx:id="refresh" fitHeight="26.0" fitWidth="15.0" layoutX="749.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="refresh" fitHeight="26.0" fitWidth="15.0" layoutX="752.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/refresh_icon.png" />
          </image>

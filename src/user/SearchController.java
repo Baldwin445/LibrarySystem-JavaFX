@@ -48,6 +48,7 @@ public class SearchController {
 
         @FXML
         private void initialize(){
+            pane2.setVisible(false);
             initTable();
             switchSearch();
             showSearchResult();
@@ -321,7 +322,7 @@ public class SearchController {
                         return;
                     }
                     // 获取预约书本的ID
-                    String queryBook = "SELECT book_id FROM `book_info_table` where book_name = '%s' and book_state = 'B';";
+                    String queryBook = "SELECT book_id FROM `book_info_table` where book_name = '%s' and (book_state = 'B' OR book_state = 'R');";
                     queryBook = String.format(queryBook, bookManage.getBookName());
                     rSet = stmt.executeQuery(queryBook);
                     rSet.next();

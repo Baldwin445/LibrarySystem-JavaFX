@@ -142,6 +142,11 @@ public class InformationController {
         refresh.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
+                try {
+                    user = new UserData(userID);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
                 initLabel();
             }
         });
